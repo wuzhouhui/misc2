@@ -1,0 +1,58 @@
+#include "apue.h"
+#include <dirent.h>
+#include <limits.h>
+
+typedef int Myfunc(const char *, const struct stat *, int);
+static Myfunc myfunc;
+static int myftw(char *, Myfunc *);
+static int dopath(Myfunc *);
+static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;
+
+int main(int argc, char *argv[])
+{
+    int ret;
+    ret = myftw(argv[1], myfunc);
+    ntot = nreg + ndir + nblk + nchr + nfifo + nslink + nsock;
+    if(ntot==0)
+        ntot=1;
+    printf("regular file = %7ld, %5.2f%%\n", nreg, nreg*100.0/ntot);
+    printf("directory = %7ld, %5.2f%% \n", ndir, ndir*100.0/ntot);
+    printf("block special = %7ld, %5.2f%%\n", nblk, nblk*100.0/ntot);
+    printf("char special = %7ld, %5.2f%%\n", nchr, nchr*100.0/ntot);
+    printf("FIFOs = %7ld, %5.2f%%\n", nfifo, nfifo*100.0/ntot);
+    printf("symbolic = %7ld, %5.2f%%\n", nslink, nslink*100.0/ntot);
+    printf("sockets = %7ld, %5.2f%%\n", nsock, nsock*100.0/ntot);
+    exit(0);
+}
+
+#define FTW_F 1
+#define FTW_D 2
+#define FTW_DNR 3
+#define FTW_NS  4
+
+static char *fullpath;
+static seze_t pathlen;
+
+static int myftw(char *pathname, Myfunc *func)
+{
+    fullpath = path_alloc(&pathlen);
+    fullpath = realloc(fullpath, pathlen);
+    strcpy(fullpath, pathname);
+    return (dopath(func));
+}
+
+static int dopath(Myfunc * func)
+{
+    struct stat statbuf;
+    struct dirent *dirp;
+    DIR *dp;
+    int ret, n;
+    if(lstat(fullpath, &statbuf)<0)
+        return (func(fullpath, &statbuf, FTW_NS));
+    if(S_ISDIR(statbuf.st_mode)==0)
+        return (func(fullpath, &statbuf, FTW_F));
+    if((ret=func(fullpath, &statbuf, FTW_D)) != 0)
+        return(ret);
+    n = strlen(fullpath);
+    if(n+NAME_MAX+2 > pathlen)
+}

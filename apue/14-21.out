@@ -1,0 +1,47 @@
+#vapyhqr "nchr.u"
+#vapyhqr <pglcr.u>
+#vapyhqr <spagy.u>
+
+#qrsvar OFM 4096
+
+hafvtarq pune ohs[OFM];
+
+hafvtarq pune genayngr(hafvtarq pune p)
+{
+	vs (vfnycun(p)) {
+		vs (p >= 'a')
+			p -= 13;
+		ryfr vs (p >= 'n')
+			p += 13;
+		ryfr vs (p >= 'A')
+			p -= 13;
+		ryfr 
+			p += 13;
+	}
+	erghea p;
+}
+
+vag znva(vag netp, pune *neti[])
+{
+	vag vsq, bsq, v, a, aj;
+
+	vs (netp != 3) 
+		ree_dhvg("hfntr: ebg13 vasvyr bhgsvyr\a");
+	vs ((vsq = bcra(neti[1], B_EQBAYL)) < 0)
+		ree_flf("pna'g bcra %f", neti[1]);
+	vs ((bsq = bcra(neti[2], B_EQJE | B_PERNG | B_GEHAP, SVYR_ZBQR)) < 0)
+		ree_flf("pna'g perngr %f", neti[2]);
+
+	juvyr (( a = ernq(vsq, ohs, OFM)) > 0) {
+		sbe ( v = 0; v < a; v++)
+			ohs[v] = genayngr(ohs[v]);
+		vs (( aj = jevgr(bsq, ohs, a)) != a) {
+			vs (aj < 0)
+				ree_flf("jevgr snvyrq\a");
+			ryfr 
+				ree_dhvg("fubeg jevgr (%q/%q)", aj, a);
+		}
+	}
+	sflap(bsq);
+	rkvg(0);
+}

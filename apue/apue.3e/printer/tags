@@ -1,0 +1,192 @@
+CONFIG_FILE	print.h	12
+DATADIR	print.h	15
+ETIME	print.h	45
+EXTRA	Makefile	/^EXTRA=$/
+EXTRALIBS	Makefile	/^  EXTRALIBS=-lsocket -lnsl -lrt -lpthread$/
+EXTRALIBS	Makefile	/^  EXTRALIBS=-pthread$/
+FILENMSZ	print.h	26
+FILEPERM	print.h	27
+HBUFSZ	print.h	41
+HDRS	Makefile	/^HDRS = print.h ipp.h$/
+HOST_NAME_MAX	print.h	34
+HTTP_INFO	printd.c	/^#define HTTP_INFO(x)	((x) >= 100 && (x) <= 199)$/
+HTTP_SUCCESS	printd.c	/^#define HTTP_SUCCESS(x) ((x) >= 200 && (x) <= 299)/
+IBUFSZ	print.h	40
+IOBUFSZ	print.h	42
+IPP_PORT	print.h	37
+JOBFILE	print.h	14
+JOBNM_MAX	print.h	30
+LPNAME	print.h	19
+LPNAME	print.h	21
+LPNAME	print.h	23
+MAXCFGLINE	util.c	6
+MAXFMTLEN	util.c	8
+MAXKWLEN	util.c	7
+MSGLEN_MAX	print.h	31
+Mprint	print.c	/^main(int argc, char *argv[])$/
+Mprintd	printd.c	/^main(int argc, char *argv[])$/
+OP_CANCEL_JOB	ipp.h	65
+OP_CREATE_JOB	ipp.h	62
+OP_GET_JOBS	ipp.h	67
+OP_GET_JOB_ATTR	ipp.h	66
+OP_GET_PRINTER_ATTR	ipp.h	68
+OP_HOLD_JOB	ipp.h	69
+OP_PAUSE_PRINTER	ipp.h	72
+OP_PRINT_JOB	ipp.h	59
+OP_PRINT_URI	ipp.h	60
+OP_PURGE_JOBS	ipp.h	74
+OP_RELEASE_JOB	ipp.h	70
+OP_RESTART_JOB	ipp.h	71
+OP_RESUME_PRINTER	ipp.h	73
+OP_SEND_DOC	ipp.h	63
+OP_SEND_URI	ipp.h	64
+OP_VALIDATE_JOB	ipp.h	61
+PLATFORM	Makefile	/^PLATFORM=$(shell $(ROOT)\/systype.sh)$/
+PROGS	Makefile	/^PROGS = print printd$/
+PR_TEXT	print.h	72
+QLEN	print.h	38
+REQDIR	print.h	16
+ROOT	Makefile	/^ROOT=..$/
+SPOOLDIR	print.h	13
+STATCLASS_CLIERR	ipp.h	/^#define STATCLASS_CLIERR(x) ((x) >= 0x0400 && (x) /
+STATCLASS_INFO	ipp.h	/^#define STATCLASS_INFO(x)   ((x) >= 0x0100 && (x) /
+STATCLASS_OK	ipp.h	/^#define STATCLASS_OK(x)     ((x) >= 0x0000 && (x) /
+STATCLASS_REDIR	ipp.h	/^#define STATCLASS_REDIR(x)  ((x) >= 0x0300 && (x) /
+STATCLASS_SRVERR	ipp.h	/^#define STATCLASS_SRVERR(x) ((x) >= 0x0500 && (x) /
+STAT_CLI_ACCERR	ipp.h	43
+STAT_CLI_ATTRCON	ipp.h	39
+STAT_CLI_BADFMT	ipp.h	35
+STAT_CLI_BADREQ	ipp.h	25
+STAT_CLI_COMPERR	ipp.h	41
+STAT_CLI_FMTERR	ipp.h	42
+STAT_CLI_FORBID	ipp.h	26
+STAT_CLI_NOAUTH	ipp.h	27
+STAT_CLI_NOCHAR	ipp.h	38
+STAT_CLI_NOCOMP	ipp.h	40
+STAT_CLI_NOPERM	ipp.h	28
+STAT_CLI_NOSCHM	ipp.h	37
+STAT_CLI_NOTFND	ipp.h	31
+STAT_CLI_NOTPOS	ipp.h	29
+STAT_CLI_NOTSUP	ipp.h	36
+STAT_CLI_OBJGONE	ipp.h	32
+STAT_CLI_TIMOUT	ipp.h	30
+STAT_CLI_TOOBIG	ipp.h	33
+STAT_CLI_TOOLNG	ipp.h	34
+STAT_OK	ipp.h	21
+STAT_OK_ATTRCON	ipp.h	23
+STAT_OK_ATTRIGN	ipp.h	22
+STAT_SRV_BADVER	ipp.h	48
+STAT_SRV_CANCEL	ipp.h	53
+STAT_SRV_DEVERR	ipp.h	49
+STAT_SRV_INTERN	ipp.h	45
+STAT_SRV_NOMULTI	ipp.h	54
+STAT_SRV_NOTSUP	ipp.h	46
+STAT_SRV_REJECT	ipp.h	51
+STAT_SRV_TMPERR	ipp.h	50
+STAT_SRV_TOOBUSY	ipp.h	52
+STAT_SRV_UNAVAIL	ipp.h	47
+TAG_BOOLEAN	ipp.h	92
+TAG_CHARSET	ipp.h	105
+TAG_DATETIME	ipp.h	95
+TAG_END_OF_ATTR	ipp.h	81
+TAG_ENUM	ipp.h	93
+TAG_INTEGER	ipp.h	91
+TAG_INTRANGE	ipp.h	97
+TAG_JOB_ATTR	ipp.h	80
+TAG_KEYWORD	ipp.h	102
+TAG_MIMETYPE	ipp.h	107
+TAG_NAMEWLANG	ipp.h	99
+TAG_NAMEWOLANG	ipp.h	101
+TAG_NATULANG	ipp.h	106
+TAG_NONE	ipp.h	90
+TAG_OCTSTR	ipp.h	94
+TAG_OPERATION_ATTR	ipp.h	79
+TAG_PRINTER_ATTR	ipp.h	82
+TAG_RESOLUTION	ipp.h	96
+TAG_TEXTWLANG	ipp.h	98
+TAG_TEXTWOLANG	ipp.h	100
+TAG_UNKNOWN	ipp.h	89
+TAG_UNSUPPORTED	ipp.h	88
+TAG_UNSUPP_ATTR	ipp.h	83
+TAG_URI	ipp.h	103
+TAG_URISCHEME	ipp.h	104
+USERNM_MAX	print.h	29
+_IPP_H	ipp.h	2
+_PRINT_H	print.h	2
+add_job	printd.c	/^add_job(struct printreq *reqp, int32_t jobid)$/
+add_option	printd.c	/^add_option(char *cp, int tag, char *optname, char /
+add_worker	printd.c	/^add_worker(pthread_t tid, int sockfd)$/
+all	Makefile	/^all:	$(PROGS) $/
+attr_group	ipp.h	117
+build_qonstart	printd.c	/^build_qonstart(void)$/
+c	printd.c	645
+clean	Makefile	/^clean:$/
+client_cleanup	printd.c	/^client_cleanup(void *arg)$/
+client_thread	printd.c	/^client_thread(void *arg)$/
+configlock	printd.c	53
+flags	print.h	64
+get_newjobno	printd.c	/^get_newjobno(void)$/
+get_printaddr	util.c	/^get_printaddr(void)$/
+get_printserver	util.c	/^get_printserver(void)$/
+getaddrlist	util.c	/^getaddrlist(const char *host, const char *service,/
+init_printer	printd.c	/^init_printer(void)$/
+init_request	printd.c	/^init_request(void)$/
+ipp_hdr	ipp.h	109
+job	printd.c	26
+jobfd	printd.c	67
+jobhead	printd.c	66
+jobid	printd.c	29
+jobid	print.h	79
+joblock	printd.c	69
+jobnm	print.h	66
+jobtail	printd.c	66
+jobwait	printd.c	70
+kill_workers	printd.c	/^kill_workers(void)$/
+log_to_stderr	print.c	14
+log_to_stderr	printd.c	46
+major_version	ipp.h	110
+mask	printd.c	61
+minor_version	ipp.h	111
+msg	print.h	80
+next	printd.c	27
+next	printd.c	37
+nextjob	printd.c	68
+op	ipp.h	113
+operation	ipp.h	121
+prev	printd.c	28
+prev	printd.c	38
+print	Makefile	/^print:		print.o util.o $(ROOT)\/sockets\/clconn2.o $/
+print.o	Makefile	/^print.o:	print.c $(HDRS)$/
+printd	Makefile	/^printd:		printd.o util.o $(ROOT)\/sockets\/clconn2.o/
+printd.o	Makefile	/^printd.o:	printd.c $(HDRS)$/
+printer	printd.c	51
+printer_name	printd.c	52
+printer_status	printd.c	/^printer_status(int sfd, struct job *jp)$/
+printer_thread	printd.c	/^printer_thread(void *arg)$/
+printreq	print.h	62
+printresp	print.h	77
+readmore	printd.c	/^readmore(int sockfd, char **bpp, int off, int *bsz/
+remove_job	printd.c	/^remove_job(struct job *target)$/
+replace_job	printd.c	/^replace_job(struct job *jp)$/
+req	printd.c	30
+request_id	ipp.h	116
+reread	printd.c	54
+retcode	print.h	78
+s	printd.c	644
+scan_configfile	util.c	/^scan_configfile(char *keyword)$/
+signal_thread	printd.c	/^signal_thread(void *arg)$/
+size	print.h	63
+sockfd	printd.c	40
+st	ipp.h	114
+status	ipp.h	122
+submit_file	print.c	/^submit_file(int fd, int sockfd, const char *fname,/
+tid	printd.c	39
+tread	util.c	/^tread(int fd, void *buf, size_t nbytes, unsigned i/
+treadn	util.c	/^treadn(int fd, void *buf, size_t nbytes, unsigned /
+u	ipp.h	115
+update_jobno	printd.c	/^update_jobno(void)$/
+usernm	print.h	65
+util.o	Makefile	/^util.o:		util.c $(HDRS)$/
+worker_thread	printd.c	36
+workerlock	printd.c	60
+workers	printd.c	59

@@ -1,0 +1,1026 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCESS_ONCE	compiler.h	356;"	d
+ACORE	8-29.c	18;"	d	file:
+AF_ALG	socket.h	180;"	d
+AF_APPLETALK	socket.h	147;"	d
+AF_ASH	socket.h	161;"	d
+AF_ATMPVC	socket.h	150;"	d
+AF_ATMSVC	socket.h	163;"	d
+AF_AX25	socket.h	145;"	d
+AF_BLUETOOTH	socket.h	173;"	d
+AF_BRIDGE	socket.h	149;"	d
+AF_CAIF	socket.h	179;"	d
+AF_CAN	socket.h	171;"	d
+AF_DECnet	socket.h	154;"	d
+AF_ECONET	socket.h	162;"	d
+AF_IB	socket.h	170;"	d
+AF_IEEE802154	socket.h	178;"	d
+AF_INET	socket.h	144;"	d
+AF_INET6	socket.h	152;"	d
+AF_IPX	socket.h	146;"	d
+AF_IRDA	socket.h	166;"	d
+AF_ISDN	socket.h	176;"	d
+AF_IUCV	socket.h	174;"	d
+AF_KEY	socket.h	157;"	d
+AF_LLC	socket.h	169;"	d
+AF_LOCAL	socket.h	143;"	d
+AF_MAX	socket.h	183;"	d
+AF_NETBEUI	socket.h	155;"	d
+AF_NETLINK	socket.h	158;"	d
+AF_NETROM	socket.h	148;"	d
+AF_NFC	socket.h	181;"	d
+AF_PACKET	socket.h	160;"	d
+AF_PHONET	socket.h	177;"	d
+AF_PPPOX	socket.h	167;"	d
+AF_RDS	socket.h	164;"	d
+AF_ROSE	socket.h	153;"	d
+AF_ROUTE	socket.h	159;"	d
+AF_RXRPC	socket.h	175;"	d
+AF_SECURITY	socket.h	156;"	d
+AF_SNA	socket.h	165;"	d
+AF_TIPC	socket.h	172;"	d
+AF_UNIX	socket.h	142;"	d
+AF_UNSPEC	socket.h	141;"	d
+AF_VSOCK	socket.h	182;"	d
+AF_WANPIPE	socket.h	168;"	d
+AF_X25	socket.h	151;"	d
+ARRAY_SIZE	15-31.c	4;"	d	file:
+AXSIG	8-29.c	21;"	d	file:
+BSZ	14-20.c	5;"	d	file:
+BSZ	14-21.c	11;"	d	file:
+BSZ	rot13a.c	5;"	d	file:
+BSZ	rot13c2.c	7;"	d	file:
+BUFFSIZE	17-18.c	12;"	d	file:
+BUFFSIZE	19-12.c	3;"	d	file:
+BUFFSIZE	19.3.c	4;"	d	file:
+BUFFSIZE	3-5.c	2;"	d	file:
+BUFLEN	16-16.c	6;"	d	file:
+BUFLEN	16-17.c	7;"	d	file:
+BUFLEN	16-19.c	6;"	d	file:
+BUFLEN	16-20.c	7;"	d	file:
+BUFLEN	16.3.c	8;"	d	file:
+BUFLEN	16.4.cli.c	6;"	d	file:
+BUFLEN	16.4.serv.c	7;"	d	file:
+BUFSIZE	1-4.c	22;"	d	file:
+CBREAK	18-20.c	/^static enum { RESET, RAW, CBREAK } ttystate = RESET;$/;"	e	enum:__anon2	file:
+CLI_PATH	17-10.c	6;"	d	file:
+CLI_PERM	17-10.c	7;"	d	file:
+CLOCK_REALTIME	12-8.c	21;"	d	file:
+CL_OPEN	open.h	4;"	d
+CL_OPEN	opend.h	5;"	d
+CMSG_ALIGN	socket.h	83;"	d
+CMSG_DATA	socket.h	85;"	d
+CMSG_FIRSTHDR	socket.h	92;"	d
+CMSG_LEN	socket.h	87;"	d
+CMSG_NXTHDR	socket.h	81;"	d
+CMSG_OK	socket.h	93;"	d
+CMSG_SPACE	socket.h	86;"	d
+CONTROLLEN	17-13.c	7;"	d	file:
+CONTROLLEN	17-14.c	8;"	d	file:
+CONTROLLEN	17-15.c	19;"	d	file:
+CONTROLLEN	17-16.c	23;"	d	file:
+COPYINCR	14-27.c	5;"	d	file:
+COPYINCR	14.11.c	5;"	d	file:
+COUNT	db.c	/^typedef	unsigned long	COUNT;	\/* unsigned counter *\/$/;"	t	file:
+CREDOPT	17-16.c	12;"	d	file:
+CREDSLEN	17-15.c	18;"	d	file:
+CREDSLEN	17-16.c	22;"	d	file:
+CREDSTRUCT	17-15.c	5;"	d	file:
+CREDSTRUCT	17-15.c	8;"	d	file:
+CREDSTRUCT	17-16.c	10;"	d	file:
+CREDSTRUCT	17-16.c	6;"	d	file:
+CR_UID	17-16.c	11;"	d	file:
+CR_UID	17-16.c	7;"	d	file:
+CS_OPEN	open.h	5;"	d
+CS_OPEN	opend.h	4;"	d
+Client	opend.h	/^} Client;$/;"	t	typeref:struct:__anon7
+DATLEN_MAX	apue_db.h	45;"	d
+DATLEN_MIN	apue_db.h	44;"	d
+DB	db.c	/^} DB;$/;"	t	typeref:struct:__anon3	file:
+DBHANDLE	apue_db.h	/^typedef	void *	DBHANDLE;$/;"	t
+DBHASH	db.c	/^typedef	unsigned long	DBHASH;	\/* hash value *\/$/;"	t	file:
+DB_INSERT	apue_db.h	35;"	d
+DB_REPLACE	apue_db.h	36;"	d
+DB_STORE	apue_db.h	37;"	d
+DEF_PAGER	15-6.c	4;"	d	file:
+DIR_MODE	apue.h	41;"	d
+FILE_MODE	apue.h	36;"	d
+FMT	8-29.c	11;"	d	file:
+FMT	8-29.c	7;"	d	file:
+FMT	8-29.c	9;"	d	file:
+FREE_OFF	db.c	43;"	d	file:
+FTW_D	4-22.c	29;"	d	file:
+FTW_DNR	4-22.c	30;"	d	file:
+FTW_F	4-22.c	28;"	d	file:
+FTW_NS	4-22.c	31;"	d	file:
+HASH	11-11.c	5;"	d	file:
+HASH	11-12.c	5;"	d	file:
+HASH_OFF	db.c	44;"	d	file:
+HOST_NAME_MAX	16-17.c	11;"	d	file:
+HOST_NAME_MAX	16-18.c	12;"	d	file:
+HOST_NAME_MAX	16-20.c	11;"	d	file:
+HOST_NAME_MAX	16.3.c	13;"	d	file:
+HOST_NAME_MAX	16.4.serv.c	11;"	d	file:
+HOST_NAME_MAX	16.5.c	12;"	d	file:
+IDXLEN_MAX	apue_db.h	43;"	d
+IDXLEN_MIN	apue_db.h	42;"	d
+IDXLEN_SZ	db.c	31;"	d	file:
+IPX_TYPE	socket.h	306;"	d
+KEY	17-3.c	9;"	d	file:
+KEY	c-24.c	9;"	d	file:
+MALLOC_SIZE	15-31.c	5;"	d	file:
+MAXADDRLEN	16-20.c	8;"	d	file:
+MAXARGC	17-23.c	3;"	d	file:
+MAXLINE	5-5.c	2;"	d	file:
+MAXLINE	6.5.c	11;"	d	file:
+MAXLINE	apue.h	31;"	d
+MAXMSG	17-3.c	8;"	d	file:
+MAXMSG	17-4.c	4;"	d	file:
+MAXMSZ	c-24.c	8;"	d	file:
+MAXSLEEP	16-10.c	4;"	d	file:
+MAXSLEEP	16-11.c	4;"	d	file:
+MAX_PASS_LEN	18-17.c	5;"	d	file:
+MSG_CMSG_CLOEXEC	socket.h	259;"	d
+MSG_CMSG_COMPAT	socket.h	263;"	d
+MSG_CMSG_COMPAT	socket.h	265;"	d
+MSG_CONFIRM	socket.h	249;"	d
+MSG_CTRUNC	socket.h	241;"	d
+MSG_DONTROUTE	socket.h	239;"	d
+MSG_DONTWAIT	socket.h	244;"	d
+MSG_EOF	socket.h	256;"	d
+MSG_EOR	socket.h	245;"	d
+MSG_ERRQUEUE	socket.h	251;"	d
+MSG_FASTOPEN	socket.h	258;"	d
+MSG_FIN	socket.h	247;"	d
+MSG_MORE	socket.h	253;"	d
+MSG_NOSIGNAL	socket.h	252;"	d
+MSG_OOB	socket.h	237;"	d
+MSG_PEEK	socket.h	238;"	d
+MSG_PROBE	socket.h	242;"	d
+MSG_RST	socket.h	250;"	d
+MSG_SENDPAGE_NOTLAST	socket.h	255;"	d
+MSG_SYN	socket.h	248;"	d
+MSG_TRUNC	socket.h	243;"	d
+MSG_TRYHARD	socket.h	240;"	d
+MSG_WAITALL	socket.h	246;"	d
+MSG_WAITFORONE	socket.h	254;"	d
+Myfunc	4-22.c	/^typedef int Myfunc(const char *, const struct stat *, int);$/;"	t	file:
+NALLOC	17-27.c	3;"	d	file:
+NALLOC	17-30.c	4;"	d	file:
+NALLOC	17.5.2.c	4;"	d	file:
+NBUF	14-21.c	12;"	d	file:
+NBUF	rot13c2.c	8;"	d	file:
+NEWLINE	db.c	34;"	d	file:
+NHASH	11-11.c	4;"	d	file:
+NHASH	11-12.c	4;"	d	file:
+NHASH_DEF	db.c	42;"	d	file:
+NLOOPS	15-33.c	5;"	d	file:
+NLOOPS	15.12.c	14;"	d	file:
+NLOOPS	15.15.c	4;"	d	file:
+NQ	17-3.c	7;"	d	file:
+NQ	c-24.c	7;"	d	file:
+NTHR	11-16.c	6;"	d	file:
+NUMNUM	11-16.c	7;"	d	file:
+OPEN_MAX_GUESS	2-17.c	28;"	d	file:
+OPEN_MAX_GUESS	2.3.c	23;"	d	file:
+OPEN_MAX_GUESS	open_max.c	28;"	d	file:
+OPTIMIZER_HIDE_VAR	compiler.h	174;"	d
+OPTSTR	19-11.c	5;"	d	file:
+OPTSTR	19-11.c	7;"	d	file:
+PAGER	15-11.c	8;"	d	file:
+PATH_MAX_GUESS	4-22.c	111;"	d	file:
+PF_ALG	socket.h	225;"	d
+PF_APPLETALK	socket.h	192;"	d
+PF_ASH	socket.h	206;"	d
+PF_ATMPVC	socket.h	195;"	d
+PF_ATMSVC	socket.h	208;"	d
+PF_AX25	socket.h	190;"	d
+PF_BLUETOOTH	socket.h	218;"	d
+PF_BRIDGE	socket.h	194;"	d
+PF_CAIF	socket.h	224;"	d
+PF_CAN	socket.h	216;"	d
+PF_DECnet	socket.h	199;"	d
+PF_ECONET	socket.h	207;"	d
+PF_IB	socket.h	215;"	d
+PF_IEEE802154	socket.h	223;"	d
+PF_INET	socket.h	189;"	d
+PF_INET6	socket.h	197;"	d
+PF_IPX	socket.h	191;"	d
+PF_IRDA	socket.h	211;"	d
+PF_ISDN	socket.h	221;"	d
+PF_IUCV	socket.h	219;"	d
+PF_KEY	socket.h	202;"	d
+PF_LLC	socket.h	214;"	d
+PF_LOCAL	socket.h	188;"	d
+PF_MAX	socket.h	228;"	d
+PF_NETBEUI	socket.h	200;"	d
+PF_NETLINK	socket.h	203;"	d
+PF_NETROM	socket.h	193;"	d
+PF_NFC	socket.h	226;"	d
+PF_PACKET	socket.h	205;"	d
+PF_PHONET	socket.h	222;"	d
+PF_PPPOX	socket.h	212;"	d
+PF_RDS	socket.h	209;"	d
+PF_ROSE	socket.h	198;"	d
+PF_ROUTE	socket.h	204;"	d
+PF_RXRPC	socket.h	220;"	d
+PF_SECURITY	socket.h	201;"	d
+PF_SNA	socket.h	210;"	d
+PF_TIPC	socket.h	217;"	d
+PF_UNIX	socket.h	187;"	d
+PF_UNSPEC	socket.h	186;"	d
+PF_VSOCK	socket.h	227;"	d
+PF_WANPIPE	socket.h	213;"	d
+PF_X25	socket.h	196;"	d
+PTR_MAX	db.c	41;"	d	file:
+PTR_SZ	db.c	40;"	d	file:
+QLEN	16-17.c	8;"	d	file:
+QLEN	16-18.c	9;"	d	file:
+QLEN	16.3.c	9;"	d	file:
+QLEN	16.4.serv.c	8;"	d	file:
+QLEN	16.5.c	9;"	d	file:
+QLEN	17-8.c	6;"	d	file:
+RAW	18-20.c	/^static enum { RESET, RAW, CBREAK } ttystate = RESET;$/;"	e	enum:__anon2	file:
+READ_PENDING	14-21.c	/^	READ_PENDING	= 1,$/;"	e	enum:rwop	file:
+READ_PENDING	rot13c2.c	/^	READ_PENDING = 1,$/;"	e	enum:rwop	file:
+RELOC_HIDE	compiler.h	167;"	d
+RESET	18-20.c	/^static enum { RESET, RAW, CBREAK } ttystate = RESET;$/;"	e	enum:__anon2	file:
+RIGHTSLEN	17-15.c	17;"	d	file:
+RIGHTSLEN	17-16.c	21;"	d	file:
+RWRWRW	4-9.c	3;"	d	file:
+SCM_CREDENTIALS	socket.h	131;"	d
+SCM_CREDTYPE	17-15.c	6;"	d	file:
+SCM_CREDTYPE	17-15.c	9;"	d	file:
+SCM_CREDTYPE	17-16.c	13;"	d	file:
+SCM_CREDTYPE	17-16.c	8;"	d	file:
+SCM_RIGHTS	socket.h	130;"	d
+SCM_SECURITY	socket.h	132;"	d
+SECTONSEC	12-8.c	14;"	d	file:
+SEP	db.c	32;"	d	file:
+SHM_MODE	15-31.c	7;"	d	file:
+SHM_SIZE	15-31.c	6;"	d	file:
+SIZE	15-33.c	6;"	d	file:
+SIZE	15.15.c	5;"	d	file:
+SIZE	16.3.c	10;"	d	file:
+SOL_AAL	socket.h	288;"	d
+SOL_ALG	socket.h	302;"	d
+SOL_ATALK	socket.h	281;"	d
+SOL_ATM	socket.h	287;"	d
+SOL_AX25	socket.h	280;"	d
+SOL_BLUETOOTH	socket.h	297;"	d
+SOL_CAIF	socket.h	301;"	d
+SOL_DCCP	socket.h	292;"	d
+SOL_DECNET	socket.h	284;"	d
+SOL_ICMPV6	socket.h	275;"	d
+SOL_IP	socket.h	270;"	d
+SOL_IPV6	socket.h	274;"	d
+SOL_IPX	socket.h	279;"	d
+SOL_IRDA	socket.h	289;"	d
+SOL_IUCV	socket.h	300;"	d
+SOL_LLC	socket.h	291;"	d
+SOL_NETBEUI	socket.h	290;"	d
+SOL_NETLINK	socket.h	293;"	d
+SOL_NETROM	socket.h	282;"	d
+SOL_NFC	socket.h	303;"	d
+SOL_PACKET	socket.h	286;"	d
+SOL_PNPIPE	socket.h	298;"	d
+SOL_PPPOL2TP	socket.h	296;"	d
+SOL_RAW	socket.h	278;"	d
+SOL_RDS	socket.h	299;"	d
+SOL_ROSE	socket.h	283;"	d
+SOL_RXRPC	socket.h	295;"	d
+SOL_SCTP	socket.h	276;"	d
+SOL_TCP	socket.h	272;"	d
+SOL_TIPC	socket.h	294;"	d
+SOL_UDP	socket.h	273;"	d
+SOL_UDPLITE	socket.h	277;"	d
+SOL_X25	socket.h	285;"	d
+SOMAXCONN	socket.h	231;"	d
+SPACE	db.c	33;"	d	file:
+STALE	17-9.c	11;"	d	file:
+STATCLASS_INFO	ipp.h	6;"	d
+STATCLASS_OK	ipp.h	5;"	d
+Sigfunc	apue.h	/^typedef	void	Sigfunc(int);	\/* for signal handlers *\/$/;"	t
+TELL_CHILD	10-24.c	/^void TELL_CHILD(pid_t pid)$/;"	f
+TELL_CHILD	14-12.c	/^void TELL_CHILD(pid_t pid)$/;"	f
+TELL_CHILD	14-7.c	/^void TELL_CHILD(pid_t pid)$/;"	f
+TELL_CHILD	15-7.c	/^void TELL_CHILD(pid_t pid)$/;"	f
+TELL_PARENT	10-24.c	/^void TELL_PARENT(pid_t pid)$/;"	f
+TELL_PARENT	14-12.c	/^void TELL_PARENT(pid_t pid)$/;"	f
+TELL_PARENT	14-7.c	/^void TELL_PARENT(pid_t pid)$/;"	f
+TELL_PARENT	15-7.c	/^void TELL_PARENT(pid_t pid)$/;"	f
+TELL_WAIT	10-24.c	/^void TELL_WAIT(void)$/;"	f
+TELL_WAIT	14-12.c	/^void TELL_WAIT(void)$/;"	f
+TELL_WAIT	14-7.c	/^void TELL_WAIT(void)$/;"	f
+TELL_WAIT	15-7.c	/^void TELL_WAIT(void)$/;"	f
+TIMEOUT	16-19.c	7;"	d	file:
+TNUM	11-16.c	8;"	d	file:
+TOK_ADD	7-9.c	3;"	d	file:
+UNUSED	14-21.c	/^	UNUSED		= 0,$/;"	e	enum:rwop	file:
+UNUSED	rot13c2.c	/^	UNUSED = 0,$/;"	e	enum:rwop	file:
+USECTONSEC	12-8.c	22;"	d	file:
+WAIT_CHILD	10-24.c	/^void WAIT_CHILD(void)$/;"	f
+WAIT_CHILD	14-12.c	/^void WAIT_CHILD(void)$/;"	f
+WAIT_CHILD	14-7.c	/^void WAIT_CHILD(void)$/;"	f
+WAIT_CHILD	15-7.c	/^void WAIT_CHILD(void)$/;"	f
+WAIT_PARENT	10-24.c	/^void WAIT_PARENT(void)$/;"	f
+WAIT_PARENT	14-12.c	/^void WAIT_PARENT(void)$/;"	f
+WAIT_PARENT	14-7.c	/^void WAIT_PARENT(void)$/;"	f
+WAIT_PARENT	15-7.c	/^void WAIT_PARENT(void)$/;"	f
+WHITE	17-23.c	4;"	d	file:
+WHITE	17.4.c	3;"	d	file:
+WRITE_PENDING	14-21.c	/^	WRITE_PENDING	= 2$/;"	e	enum:rwop	file:
+WRITE_PENDING	rot13c2.c	/^	WRITE_PENDING = 2$/;"	e	enum:rwop	file:
+_APUE_DB_H	apue_db.h	20;"	d
+_APUE_H	apue.h	5;"	d
+_IPP_H	ipp.h	2;"	d
+_LINUX_SOCKET_H	socket.h	2;"	d
+_POSIX_C_SOURCE	apue.h	7;"	d
+_XOPEN_SOURCE	apue.h	10;"	d
+_XOPEN_SOURCE	apue.h	12;"	d
+__CMSG_FIRSTHDR	socket.h	89;"	d
+__CMSG_NXTHDR	socket.h	80;"	d
+__LINUX_COMPILER_H	compiler.h	2;"	d
+__PASTE	compiler.h	49;"	d
+__UNIQUE_ID	compiler.h	179;"	d
+___PASTE	compiler.h	48;"	d
+__acquire	compiler.h	16;"	d
+__acquire	compiler.h	40;"	d
+__acquires	compiler.h	14;"	d
+__acquires	compiler.h	38;"	d
+__always_inline	compiler.h	259;"	d
+__always_unused	compiler.h	245;"	d
+__attribute_const__	compiler.h	279;"	d
+__branch_check__	compiler.h	100;"	d
+__builtin_warning	compiler.h	36;"	d
+__chk_io_ptr	compiler.h	35;"	d
+__chk_user_ptr	compiler.h	34;"	d
+__cmsg_nxthdr	socket.h	/^static inline struct cmsghdr * __cmsg_nxthdr(void *__ctl, __kernel_size_t __size,$/;"	f
+__cold	compiler.h	288;"	d
+__compiletime_assert	compiler.h	320;"	d
+__compiletime_error	compiler.h	313;"	d
+__compiletime_error_fallback	compiler.h	314;"	d
+__compiletime_error_fallback	compiler.h	317;"	d
+__compiletime_object_size	compiler.h	307;"	d
+__compiletime_warning	compiler.h	310;"	d
+__cond_lock	compiler.h	18;"	d
+__cond_lock	compiler.h	42;"	d
+__deprecated	compiler.h	194;"	d
+__deprecated	compiler.h	212;"	d
+__deprecated	compiler.h	214;"	d
+__deprecated_for_modules	compiler.h	198;"	d
+__deprecated_for_modules	compiler.h	200;"	d
+__deprecated_for_modules	compiler.h	213;"	d
+__deprecated_for_modules	compiler.h	215;"	d
+__force	compiler.h	10;"	d
+__force	compiler.h	31;"	d
+__iomem	compiler.h	12;"	d
+__iomem	compiler.h	33;"	d
+__kernel	compiler.h	29;"	d
+__kernel	compiler.h	8;"	d
+__kprobes	compiler.h	360;"	d
+__kprobes	compiler.h	362;"	d
+__maybe_unused	compiler.h	241;"	d
+__must_check	compiler.h	204;"	d
+__must_check	compiler.h	208;"	d
+__must_check	compiler.h	209;"	d
+__must_hold	compiler.h	13;"	d
+__must_hold	compiler.h	37;"	d
+__nocast	compiler.h	11;"	d
+__nocast	compiler.h	32;"	d
+__percpu	compiler.h	19;"	d
+__percpu	compiler.h	43;"	d
+__rcu	compiler.h	21;"	d
+__rcu	compiler.h	23;"	d
+__rcu	compiler.h	44;"	d
+__release	compiler.h	17;"	d
+__release	compiler.h	41;"	d
+__releases	compiler.h	15;"	d
+__releases	compiler.h	39;"	d
+__safe	compiler.h	30;"	d
+__safe	compiler.h	9;"	d
+__same_type	compiler.h	302;"	d
+__section	compiler.h	293;"	d
+__sockaddr_check_size	socket.h	15;"	d
+__trace_if	compiler.h	133;"	d
+__used	compiler.h	237;"	d
+__user	compiler.h	28;"	d
+__user	compiler.h	7;"	d
+__visible	compiler.h	297;"	d
+_base	5-11.c	72;"	d	file:
+_compiletime_assert	compiler.h	329;"	d
+_db_alloc	db.c	/^static DB *_db_alloc(int namelen)$/;"	f	file:
+_db_dodelete	db.c	/^static void _db_dodelete(DB *db)$/;"	f	file:
+_db_find_and_lock	db.c	/^static int _db_find_and_lock(DB *db, const char *key, int writelock)$/;"	f	file:
+_db_findfree	db.c	/^static int _db_findfree(DB *db, int keylen, int datlen)$/;"	f	file:
+_db_free	db.c	/^static void _db_free(DB *db)$/;"	f	file:
+_db_hash	db.c	/^static DBHASH _db_hash(DB *db, const char *key)$/;"	f	file:
+_db_readdat	db.c	/^static char *_db_readdat(DB *db)$/;"	f	file:
+_db_readidx	db.c	/^static off_t _db_readidx(DB *db, off_t offset)$/;"	f	file:
+_db_readptr	db.c	/^static off_t _db_readptr(DB *db, off_t offset)$/;"	f	file:
+_db_writedat	db.c	/^static void _db_writedat(DB *db, const char *data, off_t offset, int whence)$/;"	f	file:
+_db_writeidx	db.c	/^static void _db_writeidx(DB *db, const char *key,$/;"	f	file:
+_db_writeptr	db.c	/^static void _db_writeptr(DB *db, off_t offset, off_t ptrval)$/;"	f	file:
+_flag	5-11.c	70;"	d	file:
+_ptr	5-11.c	71;"	d	file:
+a	11-4.c	/^    int a, b, c, d;$/;"	m	struct:foo	file:
+ac_flag	8-29.c	6;"	d	file:
+acct	8-29.c	14;"	d	file:
+acct	8-29.c	5;"	d	file:
+add	18-15.c	/^static void add(char *dirname)$/;"	f	file:
+addr	16.3.c	/^	struct addrinfo addr;$/;"	m	struct:fd_addr	typeref:struct:fd_addr::addrinfo	file:
+aiocb	14-21.c	/^	struct aiocb	aiocb;$/;"	m	struct:buf	typeref:struct:buf::aiocb	file:
+aiocb	rot13c2.c	/^	struct aiocb  aiocb;$/;"	m	struct:buf	typeref:struct:buf::aiocb	file:
+array	15-31.c	/^char array[ARRAY_SIZE];$/;"	v
+b	11-16.c	/^pthread_barrier_t b;$/;"	v
+b	11-4.c	/^    int a, b, c, d;$/;"	m	struct:foo	file:
+barrier	compiler.h	158;"	d
+buf	14-20.c	/^unsigned char buf[BSZ];$/;"	v
+buf	14-21.c	/^struct buf {$/;"	s	file:
+buf	8-1.c	/^char buf[] = "a write to stdout\\n";$/;"	v
+buf	rot13a.c	/^unsigned char buf[BSZ];$/;"	v
+buf	rot13c2.c	/^struct buf {$/;"	s	file:
+buf1	3-2.c	/^char buf1[]="abcdefghij";$/;"	v
+buf2	3-2.c	/^char buf2[]="ABCDEFGHIJ";$/;"	v
+buf_args	17-23.c	/^int buf_args(char *buf, int (*optfunc)(int, char **))$/;"	f
+buf_args	17.4.c	/^int buf_args(char *buf, int (*optfunc)(int, char **))$/;"	f
+buffer_size	5-11.c	/^int buffer_size(FILE *fp)$/;"	f
+bufs	14-21.c	/^struct buf bufs[NBUF];$/;"	v	typeref:struct:buf
+bufs	rot13c2.c	/^struct buf bufs[NBUF];$/;"	v	typeref:struct:buf
+c	11-4.c	/^    int a, b, c, d;$/;"	m	struct:foo	file:
+canjump	10-20.c	/^static volatile sig_atomic_t	canjump;$/;"	v	file:
+chainoff	db.c	/^	off_t	chainoff;	\/* offset of hash chain for this index record *\/$/;"	m	struct:__anon3	file:
+charatatime	8-12.c	/^static void charatatime(char *str)$/;"	f	file:
+checktime	8-30.c	/^void checktime(char *str)$/;"	f
+child	12-17.c	/^void child(void)$/;"	f
+childpid	15-12.c	/^static pid_t *childpid = NULL;$/;"	v	file:
+cleanup	11-5.c	/^void cleanup(void *arg)$/;"	f
+cleanup	18-15.c	/^static void cleanup(void)$/;"	f	file:
+cli_args	17-24.c	/^int cli_args(int argc, char **argv)$/;"	f
+cli_conn	17-10.c	/^int cli_conn(const char *name)$/;"	f
+client	17-28.c	/^Client	*client = NULL;$/;"	v
+client_add	17-27.c	/^int client_add(int fd, uid_t uid)$/;"	f
+client_alloc	17-27.c	/^static void client_alloc(void)$/;"	f	file:
+client_del	17-27.c	/^void client_del(int fd)$/;"	f
+client_size	17-28.c	/^int	debug, oflag, client_size, log_to_stderr;$/;"	v
+clock_nanosleep	12-8.c	17;"	d	file:
+cloexec	16.3.c	/^static void cloexec(const struct fd_addr *fd_addrs, int len)$/;"	f	file:
+clrasync	c-23.c	/^int clrasync(int sockfd)$/;"	f
+cmd_add	7-9.c	/^void cmd_add()$/;"	f
+cmptr	17-13.c	/^static struct cmsghdr *cmptr = NULL; \/* malloc'ed first time *\/$/;"	v	typeref:struct:cmsghdr	file:
+cmptr	17-14.c	/^static struct cmsghdr *cmptr = NULL; \/* malloc'ed first time *\/$/;"	v	typeref:struct:cmsghdr	file:
+cmptr	17-15.c	/^static struct cmsghdr 	*cmptr = NULL; \/* malloc'ed first time *\/$/;"	v	typeref:struct:cmsghdr	file:
+cmptr	17-16.c	/^static struct cmsghdr	*cmptr = NULL;	\/* malloc'ed first time *\/$/;"	v	typeref:struct:cmsghdr	file:
+cmsg_len	socket.h	/^	__kernel_size_t	cmsg_len;	\/* data byte count, including hdr *\/$/;"	m	struct:cmsghdr
+cmsg_level	socket.h	/^        int		cmsg_level;	\/* originating protocol *\/$/;"	m	struct:cmsghdr
+cmsg_nxthdr	socket.h	/^static inline struct cmsghdr * cmsg_nxthdr (struct msghdr *__msg, struct cmsghdr *__cmsg)$/;"	f
+cmsg_type	socket.h	/^        int		cmsg_type;	\/* protocol-specific type *\/$/;"	m	struct:cmsghdr
+cmsghdr	socket.h	/^struct cmsghdr {$/;"	s
+cnt_delerr	db.c	/^	COUNT	cnt_delerr;	\/* delete error *\/$/;"	m	struct:__anon3	file:
+cnt_delok	db.c	/^	COUNT	cnt_delok;	\/* delete ok *\/$/;"	m	struct:__anon3	file:
+cnt_fetcherr	db.c	/^	COUNT	cnt_fetcherr;	\/* fetch error *\/$/;"	m	struct:__anon3	file:
+cnt_fetchok	db.c	/^	COUNT	cnt_fetchok;	\/* fetch ok *\/$/;"	m	struct:__anon3	file:
+cnt_nextrec	db.c	/^	COUNT	cnt_nextrec;	\/* nextrec *\/$/;"	m	struct:__anon3	file:
+cnt_stor1	db.c	/^	COUNT	cnt_stor1;	\/* store: DB_INSERT, no empty, appended *\/$/;"	m	struct:__anon3	file:
+cnt_stor2	db.c	/^	COUNT	cnt_stor2;	\/* store: DB_INSERT, found empty, reused *\/$/;"	m	struct:__anon3	file:
+cnt_stor3	db.c	/^	COUNT	cnt_stor3;	\/* store: DB_REPLACE, diff len, appended *\/$/;"	m	struct:__anon3	file:
+cnt_stor4	db.c	/^	COUNT	cnt_stor4;	\/* store: DB_REPLACE, same len, overwrote *\/$/;"	m	struct:__anon3	file:
+cnt_storerr	db.c	/^	COUNT	cnt_storerr;	\/* store error *\/$/;"	m	struct:__anon3	file:
+compiletime_assert	compiler.h	341;"	d
+complong	11-16.c	/^int complong(const void *arg1, const void *arg2)$/;"	f
+compt2ulong	8-29.c	/^static unsigned long compt2ulong(comp_t comptime)$/;"	f	file:
+connect_retry	16-10.c	/^int connect_retry(int sockfd, const struct sockaddr *addr, socklen_t alen)$/;"	f
+connect_retry	16-11.c	/^int connect_retry(int domain, int type, int protocol,$/;"	f
+correct	compiler.h	/^			unsigned long correct;$/;"	m	struct:ftrace_branch_data::__anon4::__anon5
+count	8-30.c	/^unsigned long long count;$/;"	v
+csopen	17-19.c	/^int csopen(char *name, int oflag)$/;"	f
+csopen	17-25.c	/^int csopen(char *name, int oflag)$/;"	f
+ctermid	18-12.c	/^char *ctermid(char *str)$/;"	f
+ctermid_name	18-12.c	/^static char ctermid_name[L_ctermid];$/;"	v	file:
+d	11-4.c	/^    int a, b, c, d;$/;"	m	struct:foo	file:
+d_name	18-15.c	/^	char		*d_name;$/;"	m	struct:devdir	file:
+d_next	18-15.c	/^	struct devdir	*d_next;$/;"	m	struct:devdir	typeref:struct:devdir::devdir	file:
+daemonize	13-1.c	/^void daemonize(const char *cmd)$/;"	f
+data	14-21.c	/^	unsigned char 	data[BSZ];$/;"	m	struct:buf	file:
+data	rot13c2.c	/^	unsigned char data[BSZ];$/;"	m	struct:buf	file:
+datbuf	db.c	/^	char	*datbuf;	\/* malloc'ed buffer for data record *\/$/;"	m	struct:__anon3	file:
+datfd	db.c	/^	int	datfd;		\/* fd for data file *\/$/;"	m	struct:__anon3	file:
+datlen	db.c	/^	size_t	datlen;		\/* length of data record *\/$/;"	m	struct:__anon3	file:
+datoff	db.c	/^	off_t	datoff;		\/* offset in data file of data record *\/$/;"	m	struct:__anon3	file:
+db_close	db.c	/^void db_close(DBHANDLE h)$/;"	f
+db_delete	db.c	/^int db_delete(DBHANDLE h, const char *key)$/;"	f
+db_fetch	db.c	/^char *db_fetch(DBHANDLE h, const char *key)$/;"	f
+db_nextrec	db.c	/^char *db_nextrec(DBHANDLE h, char *key)$/;"	f
+db_open	db.c	/^DBHANDLE db_open(const char *pathname, int oflag, ...)$/;"	f
+db_rewind	db.c	/^void db_rewind(DBHANDLE h)$/;"	f
+db_store	db.c	/^int db_store(DBHANDLE h, const char *key, const char *data, int flag)$/;"	f
+debug	17-28.c	/^int	debug, oflag, client_size, log_to_stderr;$/;"	v
+devdir	18-15.c	/^struct devdir {$/;"	s	file:
+do_driver	19-16.c	/^void do_driver(char *driver)$/;"	f
+do_line	7-9.c	/^void do_line(char *ptr)$/;"	f
+doit	7-16.c	4;"	d	file:
+dopath	4-22.c	/^static int dopath(Myfunc * func)$/;"	f	file:
+end	8-30.c	/^struct timeval end;$/;"	v	typeref:struct:timeval
+env_alrm	10-11.c	/^static jmp_buf env_alrm;$/;"	v	file:
+env_init	8-16.c	/^char *env_init[] = {"USER=unknown", "PATH=\/tmp", NULL};$/;"	v
+err_cont	error.c	/^void err_cont(int error, const char *fmt, ...)$/;"	f
+err_doit	error.c	/^static void err_doit(int errnoflag, int error, const char *fmt, va_list ap)$/;"	f	file:
+err_dump	error.c	/^void err_dump(const char *fmt, ...)$/;"	f
+err_exit	error.c	/^void err_exit(int error, const char *fmt, ...)$/;"	f
+err_msg	error.c	/^void err_msg(const char *fmt, ...)$/;"	f
+err_quit	error.c	/^void err_quit(const char *fmt, ...)$/;"	f
+err_ret	error.c	/^void err_ret(const char *fmt, ...)$/;"	f
+err_sys	error.c	/^void err_sys(const char *fmt, ...)$/;"	f
+errmsg	17-21.c	/^char	errmsg[MAXLINE];$/;"	v
+errmsg	17-28.c	/^char	errmsg[MAXLINE];$/;"	v
+f1	7-13.c	/^static void f1(int i, int j, int k, int l)$/;"	f	file:
+f2	7-13.c	/^static void f2(void)$/;"	f	file:
+f_count	11-10.c	/^    int                 f_count;$/;"	m	struct:foo	file:
+f_count	11-11.c	/^	int             f_count;$/;"	m	struct:foo	file:
+f_count	11-12.c	/^	int             f_count;$/;"	m	struct:foo	file:
+f_id	11-10.c	/^    int                 f_id;$/;"	m	struct:foo	file:
+f_id	11-11.c	/^	int             f_id;$/;"	m	struct:foo	file:
+f_id	11-12.c	/^	int             f_id;$/;"	m	struct:foo	file:
+f_lock	11-10.c	/^    pthread_mutex_t     f_lock;$/;"	m	struct:foo	file:
+f_lock	11-11.c	/^	pthread_mutex_t f_lock; \/\/ 保护 f_count$/;"	m	struct:foo	file:
+f_lock	11-12.c	/^	pthread_mutex_t f_lock;$/;"	m	struct:foo	file:
+f_next	11-11.c	/^	struct foo *    f_next;$/;"	m	struct:foo	typeref:struct:foo::foo	file:
+f_next	11-12.c	/^	struct foo *    f_next;$/;"	m	struct:foo	typeref:struct:foo::foo	file:
+fd	16.3.c	/^	int		fd;$/;"	m	struct:fd_addr	file:
+fd	17-3.c	/^	int fd;$/;"	m	struct:threadinfo	file:
+fd	c-24.c	/^	int		fd;$/;"	m	struct:threadinfo	file:
+fd	opend.h	/^	int	fd;	\/* fd, or -1 if available *\/$/;"	m	struct:__anon7
+fd_addr	16.3.c	/^struct fd_addr {$/;"	s	file:
+fd_pipe	17-2.c	/^int fd_pipe(int fd[2])$/;"	f
+fh	11-11.c	/^struct foo *fh[NHASH];$/;"	v	typeref:struct:foo
+fh	11-12.c	/^struct foo *fh[NHASH];$/;"	v	typeref:struct:foo
+file	compiler.h	/^	const char *file;$/;"	m	struct:ftrace_branch_data
+foo	11-10.c	/^struct foo{$/;"	s	file:
+foo	11-11.c	/^struct foo {$/;"	s	file:
+foo	11-12.c	/^struct foo {$/;"	s	file:
+foo	11-4.c	/^struct foo {$/;"	s	file:
+foo_alloc	11-10.c	/^struct foo* foo_alloc(int id)$/;"	f
+foo_alloc	11-11.c	/^struct foo *foo_alloc(int id)$/;"	f
+foo_alloc	11-12.c	/^struct foo * foo_alloc(int id)$/;"	f
+foo_find	11-11.c	/^struct foo *foo_find(int id)$/;"	f
+foo_find	11-12.c	/^struct foo * foo_find (int id) $/;"	f
+foo_hold	11-10.c	/^void foo_hold(struct foo *fp)$/;"	f
+foo_hold	11-11.c	/^void foo_hold(struct foo *fp)$/;"	f
+foo_hold	11-12.c	/^void foo_hold (struct foo * fp) $/;"	f
+foo_rele	11-10.c	/^void foo_rele(struct foo *fp)$/;"	f
+foo_rele	11-11.c	/^void foo_rele(struct foo *fp)$/;"	f
+foo_rele	11-12.c	/^void foo_rele (struct foo * fp)$/;"	f
+ftrace_branch_data	compiler.h	/^struct ftrace_branch_data {$/;"	s
+fullpath	4-22.c	/^static char *fullpath;$/;"	v	file:
+func	compiler.h	/^	const char *func;$/;"	m	struct:ftrace_branch_data
+func	func.c	/^int func(void)$/;"	f
+get_token	7-9.c	/^int get_token()$/;"	f
+getpass	18-17.c	/^char *getpass(const char *prompt)$/;"	f
+getpwnam	6-2.c	/^struct passwd *getpwnam(const char *name)$/;"	f
+gid	socket.h	/^	__u32	gid;$/;"	m	struct:ucred
+globval	7-13.c	/^static int globval;$/;"	v	file:
+globvar	8-1.c	/^int globvar = 6;$/;"	v
+globvar	8-3.c	/^int globvar = 6;$/;"	v
+grow_pollfd	17-30.c	/^static struct pollfd * grow_pollfd(struct pollfd *pfd, int *maxfd)$/;"	f	file:
+grow_pollfd	17.5.2.c	/^static struct pollfd * grow_pollfd(struct pollfd *pfd, int *maxfd)$/;"	f	file:
+handle_request	17-22.c	/^void handle_request(char *buf, int nread, int fd)$/;"	f
+handle_request	17-31.c	/^void handle_request(char *buf, int nread, int clifd, uid_t uid)$/;"	f
+hashlock	11-11.c	/^pthread_mutex_t hashlock = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+hashlock	11-12.c	/^pthread_mutex_t hashlock = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+hashoff	db.c	/^	off_t	hashoff;	\/* offset in index file of hash table *\/$/;"	m	struct:__anon3	file:
+head	18-15.c	/^static struct devdir	*head;$/;"	v	typeref:struct:devdir	file:
+heapsort	11-16.c	16;"	d	file:
+helper	17-3.c	/^void *helper(void *arg)$/;"	f
+helper	c-24.c	/^void *helper(void *arg)$/;"	f
+hit	compiler.h	/^			unsigned long hit;$/;"	m	struct:ftrace_branch_data::__anon4::__anon6
+idxbuf	db.c	/^	char	*idxbuf;	\/* malloc'ed buffer for index record *\/$/;"	m	struct:__anon3	file:
+idxfd	db.c	/^	int	idxfd;		\/* fd for index file *\/$/;"	m	struct:__anon3	file:
+idxlen	db.c	/^	size_t	idxlen;		\/* exclude IDXLEN_SZ bytes at front of record *\/$/;"	m	struct:__anon3	file:
+idxoff	db.c	/^	off_t	idxoff;		\/* offset in index file of index record *\/$/;"	m	struct:__anon3	file:
+if	compiler.h	132;"	d
+incorrect	compiler.h	/^			unsigned long incorrect;$/;"	m	struct:ftrace_branch_data::__anon4::__anon5
+initserver	16-12.c	/^int initserver(int type, const struct sockaddr *addr, socklen_t alen,$/;"	f
+initserver	16-22.c	/^int initserver(int type, const struct sockaddr *addr, socklen_t alen,$/;"	f
+is_linebuffered	5-11.c	/^int is_linebuffered(FILE *fp)$/;"	f
+is_read_lockable	apue.h	109;"	d
+is_unbuffered	5-11.c	/^int is_unbuffered(FILE *fp)$/;"	f
+is_write_lockable	apue.h	111;"	d
+isatty	18-13.c	/^int isatty(int fd)$/;"	f
+j_id	11-14.c	/^    pthread_t j_id;$/;"	m	struct:job	file:
+j_next	11-14.c	/^    struct job * j_next;$/;"	m	struct:job	typeref:struct:job::job	file:
+j_prev	11-14.c	/^    struct job * j_prev;$/;"	m	struct:job	typeref:struct:job::job	file:
+jmpbuf	10-20.c	/^static sigjmp_buf		jmpbuf;$/;"	v	file:
+jmpbuffer	7-13.c	/^static jmp_buf jmpbuffer;$/;"	v	file:
+job	11-14.c	/^struct job {$/;"	s	file:
+job_append	11-14.c	/^void job_append(struct queue * qp, struct job *jp)$/;"	f
+job_insert	11-14.c	/^void job_insert(struct queue * qp, struct job * jp)$/;"	f
+job_remove	11-14.c	/^void job_remove(struct queue * qp, struct job * jp)$/;"	f
+l_linger	socket.h	/^	int		l_linger;	\/* How long to linger for	*\/$/;"	m	struct:linger
+l_onoff	socket.h	/^	int		l_onoff;	\/* Linger active		*\/$/;"	m	struct:linger
+last	14-21.c	/^	int		last;$/;"	m	struct:buf	file:
+last	rot13c2.c	/^	int           last;$/;"	m	struct:buf	file:
+len	c-24.c	/^	int		len;$/;"	m	struct:threadinfo	file:
+likely	compiler.h	121;"	d
+likely	compiler.h	152;"	d
+likely_notrace	compiler.h	97;"	d
+line	compiler.h	/^	unsigned line;$/;"	m	struct:ftrace_branch_data
+linger	socket.h	/^struct linger {$/;"	s
+lock	12-16.c	/^pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+lock1	12-17.c	/^pthread_mutex_t lock1 = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+lock2	12-17.c	/^pthread_mutex_t lock2 = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+lock_reg	14-12.c	/^int lock_reg(int fd, int cmd, int type, off_t offset, int whence, off_t len)$/;"	f
+lock_reg	14-5.c	/^int lock_reg(int fd, int cmd, int type, off_t offset, int whence, off_t len)$/;"	f
+lock_test	14-6.c	/^pid_t lock_test(int fd, int type, off_t offset, int whence, off_t len)$/;"	f
+lockabyte	14-7.c	/^static void lockabyte(const char *name, int fd, off_t offset)$/;"	f	file:
+log_doit	errorlog.c	/^static void log_doit(int errnoflag, int error, int priority,$/;"	f	file:
+log_exit	errorlog.c	/^void log_exit(int error, const char *fmt, ...)$/;"	f
+log_msg	errorlog.c	/^void log_msg(const char *fmt, ...)$/;"	f
+log_open	errorlog.c	/^void log_open(const char *ident, int option, int facility)$/;"	f
+log_quit	errorlog.c	/^void log_quit(const char *fmt, ...)$/;"	f
+log_ret	errorlog.c	/^void log_ret(const char *fmt, ...)$/;"	f
+log_sys	errorlog.c	/^void log_sys(const char *fmt, ...)$/;"	f
+log_to_stderr	17-28.c	/^int	debug, oflag, client_size, log_to_stderr;$/;"	v
+loop	17-29.c	/^void loop(void)$/;"	f
+loop	17-30.c	/^void loop(void)$/;"	f
+loop	17.5.1.c	/^void loop(void)$/;"	f
+loop	17.5.2.c	/^void loop(void)$/;"	f
+loop	19-12.c	/^void loop(int ptym, int ignoreeof)$/;"	f
+loop	19.3.c	/^void loop(int ptym, int ignoreeof)$/;"	f
+m	c-24.c	/^	struct mymesg	m;$/;"	m	struct:threadinfo	typeref:struct:threadinfo::mymesg	file:
+m_next	11-15.c	/^	struct msg *m_next;$/;"	m	struct:msg	typeref:struct:msg::msg	file:
+main	1-10.c	/^int main()$/;"	f
+main	1-4.c	/^int main()$/;"	f
+main	1-8.c	/^int main(){$/;"	f
+main	1-9.c	/^int main()$/;"	f
+main	10-10.c	/^int main(void)$/;"	f
+main	10-11.c	/^int main()$/;"	f
+main	10-12.c	/^int main(void)$/;"	f
+main	10-2.c	/^int main(void)$/;"	f
+main	10-20.c	/^int main(void)$/;"	f
+main	10-5.c	/^int main(void)$/;"	f
+main	10.1.c	/^int main(void)$/;"	f
+main	10.6.c	/^int main(void)$/;"	f
+main	10.9.test.c	/^int main(void)$/;"	f
+main	10.c	/^int main(void)$/;"	f
+main	11-13.c	/^int main()$/;"	f
+main	11-16.c	/^int main(void)$/;"	f
+main	11-2.c	/^int main(void)$/;"	f
+main	11-3.c	/^int main(void)$/;"	f
+main	11-4.c	/^int main(void)$/;"	f
+main	11-5.c	/^int main(void)$/;"	f
+main	12-16.c	/^int main(void)$/;"	f
+main	12-17.c	/^int main(void)$/;"	f
+main	14-12.c	/^int main(int argc, char *argv[])$/;"	f
+main	14-20.c	/^int main(int argc, char *argv[])$/;"	f
+main	14-21.c	/^int main(int argc, char *argv[])$/;"	f
+main	14-27.c	/^int main(int argc, char *argv[])$/;"	f
+main	14-7.c	/^int main(void)$/;"	f
+main	14.11.c	/^int main(int argc, char *argv[])$/;"	f
+main	15-11.c	/^int main(int argc, char *argv[])$/;"	f
+main	15-14.c	/^int main(void)$/;"	f
+main	15-15.c	/^int main(void)$/;"	f
+main	15-17.c	/^int main(void)$/;"	f
+main	15-18.c	/^int main(void)$/;"	f
+main	15-19.c	/^int main(void)$/;"	f
+main	15-31.c	/^int main(void)$/;"	f
+main	15-33.c	/^int main(void)$/;"	f
+main	15-5.c	/^int main(void)$/;"	f
+main	15-6.c	/^int main(int argc, char *argv[])$/;"	f
+main	15.12.c	/^int main(void)$/;"	f
+main	15.15.c	/^int main(void)$/;"	f
+main	15.3.c	/^int main(void)$/;"	f
+main	15.4.c	/^int main(void)$/;"	f
+main	15.5.c	/^int main(void)$/;"	f
+main	15.7.1.c	/^int main(void)$/;"	f
+main	15.7.2.c	/^int main(void)$/;"	f
+main	16-16.c	/^int main(int argc, char *argv[])$/;"	f
+main	16-17.c	/^int main(int argc, char *argv[])$/;"	f
+main	16-18.c	/^int main(int argc, char *argv[])$/;"	f
+main	16-19.c	/^int main(int argc, char *argv[])$/;"	f
+main	16-20.c	/^int main(int argc, char *argv[])$/;"	f
+main	16-9.c	/^int main(int argc, char *argv[])$/;"	f
+main	16.1.c	/^int main(void)$/;"	f
+main	16.3.c	/^int main(int argc, char *argv[])$/;"	f
+main	16.4.cli.c	/^int main(int argc, char *argv[])$/;"	f
+main	16.4.serv.c	/^int main(int argc, char *argv[])$/;"	f
+main	16.5.c	/^int main(int argc, char *argv[])$/;"	f
+main	17-18.c	/^int main(int argc, char *argv[])$/;"	f
+main	17-21.c	/^int main(void)$/;"	f
+main	17-28.c	/^int main(int argc, char *argv[])$/;"	f
+main	17-3.c	/^int main(void)$/;"	f
+main	17-4.c	/^int main(int argc, char *argv[])$/;"	f
+main	17-5.c	/^int main(void)$/;"	f
+main	18-10.c	/^int main()$/;"	f
+main	18-11.c	/^int main()$/;"	f
+main	18-14.c	/^int main(void)$/;"	f
+main	18-16.c	/^int main(void)$/;"	f
+main	18-18.c	/^int main(void)$/;"	f
+main	18-21.c	/^int main(void)$/;"	f
+main	18-22.c	/^int main(void)$/;"	f
+main	18.1.c	/^int main(void)$/;"	f
+main	19-11.c	/^int main(int argc, char *argv[])$/;"	f
+main	2-17.c	/^int main()$/;"	f
+main	20-3.c	/^int main(void)$/;"	f
+main	3-1.c	/^int main()$/;"	f
+main	3-11.c	/^int main(int argc, char *argv[]){$/;"	f
+main	3-2.c	/^int main(){$/;"	f
+main	3-5.c	/^int main(){$/;"	f
+main	4-12.c	/^int main(){$/;"	f
+main	4-16.c	/^int main()$/;"	f
+main	4-21.c	/^int main(int argc, char *argv[]){$/;"	f
+main	4-22.c	/^int main(int argc, char *argv[])$/;"	f
+main	4-25.c	/^int main(int argc, char *argv[])$/;"	f
+main	4-3.c	/^int main(int argc, char *argv[]){$/;"	f
+main	4-8.c	/^int main(int argc, char *argv[]){$/;"	f
+main	4-9.c	/^int main(){$/;"	f
+main	5-11.c	/^int     main()$/;"	f
+main	5-13.c	/^int main()$/;"	f
+main	5-4.c	/^int main(){$/;"	f
+main	5-5.c	/^int main(){$/;"	f
+main	6-11.c	/^int main()$/;"	f
+main	6.5.c	/^int main()$/;"	f
+main	7-13.c	/^int main(void)$/;"	f
+main	7-16.c	/^int main(void)$/;"	f
+main	7-3.c	/^int main(void)$/;"	f
+main	7-4.c	/^int main(int argc, char *argv[])$/;"	f
+main	7-9.c	/^int main(void)$/;"	f
+main	8-1.c	/^int main(void)$/;"	f
+main	8-12.c	/^int main(void)$/;"	f
+main	8-16.c	/^int main (void)$/;"	f
+main	8-17.c	/^int main(int argc, char *argv[])$/;"	f
+main	8-20.c	/^int main(void)$/;"	f
+main	8-23.c	/^int main(void)$/;"	f
+main	8-24.c	/^int main(int argc, char *argv[])$/;"	f
+main	8-25.c	/^int main(void)$/;"	f
+main	8-28.c	/^int main()$/;"	f
+main	8-29.c	/^int main(int argc, char *argv[])$/;"	f
+main	8-3.c	/^int main(void)$/;"	f
+main	8-30.c	/^int main(int argc, char *argv[])$/;"	f
+main	8-6.c	/^int main()$/;"	f
+main	8-8.c	/^int main(void)$/;"	f
+main	8.3.c	/^int main(void)$/;"	f
+main	8.6.c	/^int main(void)$/;"	f
+main	8.7.c	/^int main(void)$/;"	f
+main	9-12.c	/^int main(void)$/;"	f
+main	c-15.c	/^int main(void)$/;"	f
+main	c-18.c	/^int main(void)$/;"	f
+main	c-24.c	/^int main(void)$/;"	f
+main	c-5.c	/^int main()$/;"	f
+main	c-7.c	/^int main()$/;"	f
+main	c7-1.c	/^void main(void)$/;"	f
+main	devrdev.c	/^int main(int argc, char *argv[])$/;"	f
+main	gdbdemo.c	/^int main(){$/;"	f
+main	hello1.c	/^int main()$/;"	f
+main	hello2.c	/^int main()$/;"	f
+main	rot13a.c	/^main(int argc, char* argv[])$/;"	f
+main	rot13c2.c	/^main(int argc, char* argv[])$/;"	f
+main	test.c	/^int main(void)$/;"	f
+make_temp	5-13.c	/^void make_temp(char *template)$/;"	f
+mask	12-16.c	/^sigset_t mask;$/;"	v
+max	apue.h	46;"	d
+maxfd	15-12.c	/^static int maxfd;$/;"	v	file:
+merge	11-16.c	/^void merge(void)$/;"	f
+min	apue.h	45;"	d
+miss	compiler.h	/^			unsigned long miss;$/;"	m	struct:ftrace_branch_data::__anon4::__anon6
+miss_hit	compiler.h	/^		unsigned long miss_hit[2];$/;"	m	union:ftrace_branch_data::__anon4
+mmsghdr	socket.h	/^struct mmsghdr {$/;"	s
+msg	11-15.c	/^struct msg {$/;"	s	file:
+msg_control	socket.h	/^	void 	*	msg_control;	\/* Per protocol magic (eg BSD file descriptor passing) *\/$/;"	m	struct:msghdr
+msg_controllen	socket.h	/^	__kernel_size_t	msg_controllen;	\/* Length of cmsg list *\/$/;"	m	struct:msghdr
+msg_flags	socket.h	/^	unsigned int	msg_flags;$/;"	m	struct:msghdr
+msg_hdr	socket.h	/^	struct msghdr   msg_hdr;$/;"	m	struct:mmsghdr	typeref:struct:mmsghdr::msghdr
+msg_iov	socket.h	/^	struct iovec *	msg_iov;	\/* Data blocks			*\/$/;"	m	struct:msghdr	typeref:struct:msghdr::iovec
+msg_iovlen	socket.h	/^	__kernel_size_t	msg_iovlen;	\/* Number of blocks		*\/$/;"	m	struct:msghdr
+msg_len	socket.h	/^	unsigned int        msg_len;$/;"	m	struct:mmsghdr
+msg_name	socket.h	/^	void	*	msg_name;	\/* Socket name			*\/$/;"	m	struct:msghdr
+msg_namelen	socket.h	/^	int		msg_namelen;	\/* Length of name		*\/$/;"	m	struct:msghdr
+msghdr	socket.h	/^struct msghdr {$/;"	s
+mtext	15.12.c	/^	void *mtext;$/;"	m	struct:mymesg	file:
+mtext	17-3.c	/^	char mtext[MAXMSG];$/;"	m	struct:mymesg	file:
+mtext	17-4.c	/^	char mtext[MAXMSG];$/;"	m	struct:mymesg	file:
+mtext	c-24.c	/^	char	mtext[MAXMSZ + 1]; \/* plus 1 for null terminate *\/$/;"	m	struct:mymesg	file:
+mtype	15.12.c	/^	long mtype;$/;"	m	struct:mymesg	file:
+mtype	17-3.c	/^	long mtype;$/;"	m	struct:mymesg	file:
+mtype	17-4.c	/^	long mtype;$/;"	m	struct:mymesg	file:
+mtype	c-24.c	/^	long	mtype;$/;"	m	struct:mymesg	file:
+mutex	c-24.c	/^	pthread_mutex_t	mutex;$/;"	m	struct:threadinfo	file:
+my_alarm	10-5.c	/^static void my_alarm(int signo)$/;"	f	file:
+my_exit1	7-3.c	/^static void my_exit1(void)$/;"	f	file:
+my_exit2	7-3.c	/^static void my_exit2(void)$/;"	f	file:
+my_sig2str	10.2.c	/^int my_sig2str(int signo, char *str)$/;"	f
+myftw	4-22.c	/^static int myftw(char *pathname, Myfunc *func)$/;"	f	file:
+myfunc	4-22.c	/^static Myfunc myfunc;$/;"	v	file:
+myfunc	4-22.c	/^static int myfunc(const char *pathname, const struct stat *statptr, int type)$/;"	f	file:
+mymesg	15.12.c	/^struct mymesg {$/;"	s	file:
+mymesg	17-3.c	/^struct mymesg {$/;"	s	file:
+mymesg	17-4.c	/^struct mymesg {$/;"	s	file:
+mymesg	c-24.c	/^struct mymesg {$/;"	s	file:
+nGlobalVar	gdbdemo.c	/^int nGlobalVar = 0;$/;"	v
+name	db.c	/^	char	*name;		\/* name db was opened under *\/$/;"	m	struct:__anon3	file:
+nblk	4-22.c	/^static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;$/;"	v	file:
+nchr	4-22.c	/^static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;$/;"	v	file:
+ndir	4-22.c	/^static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;$/;"	v	file:
+newmask	10-24.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+newmask	14-12.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+newmask	14-7.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+nfifo	4-22.c	/^static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;$/;"	v	file:
+nhash	db.c	/^	DBHASH	nhash;		\/* current hash table size *\/$/;"	m	struct:__anon3	file:
+noinline	compiler.h	249;"	d
+noinline_for_stack	compiler.h	256;"	d
+notrace	compiler.h	57;"	d
+nreg	4-22.c	/^static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;$/;"	v	file:
+nslink	4-22.c	/^static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;$/;"	v	file:
+nsock	4-22.c	/^static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;$/;"	v	file:
+ntid	11-2.c	/^pthread_t ntid;$/;"	v
+ntot	4-22.c	/^static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;$/;"	v	file:
+nums	11-16.c	/^long nums[NUMNUM];$/;"	v
+oflag	17-21.c	/^int	oflag;$/;"	v
+oflag	17-28.c	/^int	debug, oflag, client_size, log_to_stderr;$/;"	v
+oldmask	10-24.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+oldmask	14-12.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+oldmask	14-7.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+op	14-21.c	/^	enum rwop	op;$/;"	m	struct:buf	typeref:enum:buf::rwop	file:
+op	rot13c2.c	/^	enum rwop     op;$/;"	m	struct:buf	typeref:enum:buf::rwop	file:
+open_max	2-17.c	/^long open_max()$/;"	f
+open_max	2.3.c	/^long open_max()$/;"	f
+open_max	open_max.c	/^long open_max()$/;"	f
+openmax	2-17.c	/^static long openmax = 0;$/;"	v	file:
+openmax	2-17.c	/^static long openmax = OPEN_MAX;$/;"	v	file:
+openmax	open_max.c	/^static long openmax = 0;$/;"	v	file:
+openmax	open_max.c	/^static long openmax = OPEN_MAX;$/;"	v	file:
+parent	12-17.c	/^void parent(void)$/;"	f
+path_alloc	4-22.c	/^char *path_alloc(size_t *sizep)$/;"	f
+pathlen	4-22.c	/^static size_t pathlen;$/;"	v	file:
+pathmax	4-22.c	/^static long pathmax = PATH_MAX;$/;"	v	file:
+pathmax	4-22.c	/^static long pathmax=0;$/;"	v	file:
+pathname	17-21.c	/^char	*pathname;$/;"	v
+pathname	17-28.c	/^char	*pathname;$/;"	v
+pathname	18-15.c	/^static char		pathname[_POSIX_PATH_MAX + 1];$/;"	v	file:
+pclose	15-12.c	/^int pclose(FILE *fp)$/;"	f
+pfd1	15-7.c	/^static int pfd1[2], pfd2[2];$/;"	v	file:
+pfd2	15-7.c	/^static int pfd1[2], pfd2[2];$/;"	v	file:
+pflags	8.7.c	/^void pflags(int fd)$/;"	f
+pid	socket.h	/^	__u32	pid;$/;"	m	struct:ucred
+popen	15-12.c	/^FILE *popen(const char *cmdstring, const char *type)$/;"	f
+posix_version	4-22.c	/^static long posix_version = 0;$/;"	v	file:
+pr_bits	10-12.c	/^void pr_bits(int no, int len)$/;"	f
+pr_exit	8-5.c	/^void pr_exit(int status)$/;"	f
+pr_exit	8.3.c	/^void pr_exit(int status)$/;"	f
+pr_exit	pr_exit.c	/^void pr_exit(int status)$/;"	f
+pr_ids	9-12.c	/^static void pr_ids(char *name)$/;"	f	file:
+pr_limits	7-16.c	/^static void pr_limits(char *name, int resource)$/;"	f	file:
+pr_mask	10-14.c	/^void pr_mask(const char *str)$/;"	f
+pr_mask	10.9.c	/^void pr_mask(const char *str)$/;"	f
+pr_stdio	5-11.c	/^void    pr_stdio(const char *name, FILE *fp)$/;"	f
+pr_winsize	18-22.c	/^static void pr_winsize(int fd)$/;"	f	file:
+prepare	12-17.c	/^void prepare(void)$/;"	f
+print_family	16-9.c	/^void print_family(struct addrinfo *aip)$/;"	f
+print_flags	16-9.c	/^void print_flags(struct addrinfo *aip)$/;"	f
+print_protocol	16-9.c	/^void print_protocol(struct addrinfo *aip)$/;"	f
+print_type	16-9.c	/^void print_type(struct addrinfo *aip)$/;"	f
+print_uptime	16-16.c	/^void print_uptime(int sockfd)$/;"	f
+print_uptime	16-19.c	/^void print_uptime(int sockfd, struct addrinfo *aip)$/;"	f
+print_uptime	16.4.cli.c	/^void print_uptime(int sockfd)$/;"	f
+printfoo	11-4.c	/^void printfoo(const char *s, const struct foo *fp)$/;"	f
+printids	11-2.c	/^void printids(const char *s)$/;"	f
+process_msg	11-15.c	/^void process_msg(void)$/;"	f
+ptroff	db.c	/^	off_t	ptroff;		\/* chain ptr offset pointing to this idx record *\/$/;"	m	struct:__anon3	file:
+ptrval	db.c	/^	off_t	ptrval;		\/* contents of chain ptr in index record *\/$/;"	m	struct:__anon3	file:
+pty_fork	19-10.c	/^pid_t pty_fork(int *ptrfdm, char *slave_name, int slave_namesz,$/;"	f
+ptym_open	19-9.c	/^int ptym_open(char *pts_name, int pts_namesz)$/;"	f
+ptys_open	19-9.c	/^int ptys_open(char *pts_name)$/;"	f
+q_head	11-14.c	/^    struct job * q_head;$/;"	m	struct:queue	typeref:struct:queue::job	file:
+q_lock	11-14.c	/^    pthread_rwlock_t q_lock;$/;"	m	struct:queue	file:
+q_tail	11-14.c	/^    struct job * q_tail;$/;"	m	struct:queue	typeref:struct:queue::job	file:
+qid	17-3.c	/^	int qid;$/;"	m	struct:threadinfo	file:
+qid	c-24.c	/^	int		qid;$/;"	m	struct:threadinfo	file:
+qlock	11-15.c	/^pthread_mutex_t qlock = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+qready	11-15.c	/^pthread_cond_t qready = PTHREAD_COND_INITIALIZER;$/;"	v
+queue	11-14.c	/^struct queue {$/;"	s	file:
+queue_init	11-14.c	/^int queue_init(struct queue *qp)$/;"	f
+quitflag	12-16.c	/^int quitflag;$/;"	v
+read_lock	apue.h	96;"	d
+readn	14-24.c	/^ssize_t readn(int fd, void *ptr, size_t n)$/;"	f
+readw_lock	apue.h	98;"	d
+ready	c-24.c	/^	pthread_cond_t	ready;$/;"	m	struct:threadinfo	file:
+recv_fd	17-14.c	/^int recv_fd(int fd, ssize_t (*userfunc)(int, const void *, size_t))$/;"	f
+recv_ufd	17-16.c	/^int recv_ufd(int fd, uid_t *uidptr,$/;"	f
+rwop	14-21.c	/^enum rwop {$/;"	g	file:
+rwop	rot13c2.c	/^enum rwop {$/;"	g	file:
+s_alloc	15-35.c	/^struct slock * s_alloc()$/;"	f
+s_free	15-35.c	/^void s_free(struct slock *sp)$/;"	f
+s_lock	15-35.c	/^int s_lock(struct slock *sp)$/;"	f
+s_trylock	15-35.c	/^int s_trylock(struct slock *sp)$/;"	f
+s_unlock	15-35.c	/^int s_unlock(struct slock *sp)$/;"	f
+sa_data	socket.h	/^	char		sa_data[14];	\/* 14 bytes of protocol address	*\/$/;"	m	struct:sockaddr
+sa_family	socket.h	/^	sa_family_t	sa_family;	\/* address family, AF_xxx	*\/$/;"	m	struct:sockaddr
+sa_family_t	socket.h	/^typedef __kernel_sa_family_t	sa_family_t;$/;"	t
+save_termios	18-20.c	/^static struct termios	save_termios;$/;"	v	typeref:struct:termios	file:
+searchdir	18-15.c	/^static char *searchdir(char *dirname, struct stat *fdstatp)$/;"	f	file:
+send_err	17-12.c	/^int send_err(int fd, int errcode, const char *msg)$/;"	f
+send_fd	17-13.c	/^int send_fd(int fd, int fd_to_send)$/;"	f
+send_fd	17-15.c	/^int send_fd(int fd, int fd_to_send)$/;"	f
+serv_accept	17-9.c	/^int serv_accept(int listenfd, uid_t *uidptr)$/;"	f
+serv_listen	17-8.c	/^int serv_listen(const char *name)$/;"	f
+serve	16-17.c	/^void serve(int sockfd)$/;"	f
+serve	16-18.c	/^void serve(int sockfd)$/;"	f
+serve	16-20.c	/^int serve(int sockfd)$/;"	f
+serve	16.3.c	/^void serve(fd_set *fdset, int maxfd, struct fd_addr *fd_addrs, int len)$/;"	f
+serve	16.4.serv.c	/^void serve(int sockfd)$/;"	f
+serve	16.5.c	/^void serve(int sockfd)$/;"	f
+set_cloexec	13-9.c	/^int set_cloexec(int fd)$/;"	f
+set_fl	14-12.c	/^void set_fl(int fd, int flags)$/;"	f
+set_fl	3-12.c	/^void set_fl(int fd, int flags)$/;"	f
+set_noecho	19-11.c	/^static void set_noecho(int fd)	\/* turn off echo (for slave pty) *\/$/;"	f	file:
+setasync	c-23.c	/^int setasync(int sockfd)$/;"	f
+sig_alrm	10-10.c	/^static void sig_alrm(int signo)$/;"	f	file:
+sig_alrm	10-11.c	/^static void sig_alrm(int signo)$/;"	f	file:
+sig_alrm	10-20.c	/^static void sig_alrm(int signo)$/;"	f	file:
+sig_catch	18-21.c	/^static void sig_catch(int signo)$/;"	f	file:
+sig_hug	9-12.c	/^static void sig_hug(int signo)$/;"	f	file:
+sig_id	10.9.c	/^} sig_id[] = {$/;"	v	typeref:struct:__anon1	file:
+sig_int	1-10.c	/^void sig_int(int signal){$/;"	f
+sig_pipe	15-18.c	/^static void sig_pipe(int signo)$/;"	f	file:
+sig_pipe	15.5.c	/^static void sig_pipe(int signo)$/;"	f	file:
+sig_term	19-12.c	/^static void sig_term(int signo)$/;"	f	file:
+sig_usr	10-2.c	/^static void sig_usr(int signo)$/;"	f	file:
+sig_usr	10-24.c	/^static void sig_usr(int signo) $/;"	f	file:
+sig_usr	10.1.c	/^static void sig_usr(int signo)$/;"	f	file:
+sig_usr	10.c	/^static void sig_usr(int signo)$/;"	f	file:
+sig_usr	14-12.c	/^static void sig_usr(int signo) $/;"	f	file:
+sig_usr	14-7.c	/^static void sig_usr(int signo) $/;"	f	file:
+sig_usr1	10-20.c	/^static void sig_usr1(int signo)$/;"	f	file:
+sig_winch	18-22.c	/^static void sig_winch(int signo)$/;"	f	file:
+sigalrm	16-19.c	/^void sigalrm(int signo)$/;"	f
+sigcaught	19-12.c	/^static volatile sig_atomic_t sigcaught;	\/* set by signal handler *\/$/;"	v	file:
+sigchld	16.5.c	/^void sigchld(int signo)$/;"	f
+sigflag	10-24.c	/^static volatile sig_atomic_t sigflag; \/\/ set nozero by sig handler$/;"	v	file:
+sigflag	14-12.c	/^static volatile sig_atomic_t sigflag; \/\/ set nozero by sig handler$/;"	v	file:
+sigflag	14-7.c	/^static volatile sig_atomic_t sigflag; \/\/ set nozero by sig handler$/;"	v	file:
+sigint	c-15.c	/^void sigint(int signo)$/;"	f
+signal	10-18.c	/^Sigfunc *signal(int signo, Sigfunc *func)$/;"	f
+signal_intr	10-19.c	/^Sigfunc *signal_intr(int signo, Sigfunc *func)$/;"	f
+signame	10.9.c	/^	char signame[16];$/;"	m	struct:__anon1	file:
+signo	10.9.c	/^	int signo;$/;"	m	struct:__anon1	file:
+sleep	c-13.c	/^unsigned sleep(unsigned seconds)$/;"	f
+sleep_us	c-16.c	/^void sleep_us(unsigned int nusecs)$/;"	f
+sleep_us	c-17.c	/^void sleep_us(unsigned int nusecs)$/;"	f
+snums	11-16.c	/^long snums[NUMNUM];$/;"	v
+sockaddr	socket.h	/^struct sockaddr {$/;"	s
+sockaddr_storage	socket.h	39;"	d
+system	8-22.c	/^int system(const char *cmdstring)$/;"	f
+tail	18-15.c	/^static struct devdir	*tail;$/;"	v	typeref:struct:devdir	file:
+tempFunction	gdbdemo.c	/^int tempFunction( int a, int b){$/;"	f
+thr_fn	11-16.c	/^void *thr_fn(void *arg)$/;"	f
+thr_fn	11-2.c	/^void *thr_fn(void *arg)$/;"	f
+thr_fn	12-16.c	/^void *thr_fn(void *arg)$/;"	f
+thr_fn	12-17.c	/^void *thr_fn(void *arg)$/;"	f
+thr_fn1	11-3.c	/^void *thr_fn1(void *arg)$/;"	f
+thr_fn1	11-4.c	/^void *thr_fn1(void *arg)$/;"	f
+thr_fn1	11-5.c	/^void *thr_fn1(void *arg)$/;"	f
+thr_fn2	11-3.c	/^void *thr_fn2(void *arg)$/;"	f
+thr_fn2	11-4.c	/^void *thr_fn2(void *arg)$/;"	f
+thr_fn2	11-5.c	/^void *thr_fn2(void *arg)$/;"	f
+threadinfo	17-3.c	/^struct threadinfo {$/;"	s	file:
+threadinfo	c-24.c	/^struct threadinfo {$/;"	s	file:
+to_arg	12-8.c	/^	void		*to_arg;		\/* argument *\/$/;"	m	struct:to_info	file:
+to_fn	12-8.c	/^	void		(*to_fn)(void *);	\/* function *\/$/;"	m	struct:to_info	file:
+to_info	12-8.c	/^struct to_info {$/;"	s	file:
+to_wait	12-8.c	/^	struct timespec	to_wait;		\/* time to wait *\/$/;"	m	struct:to_info	typeref:struct:to_info::timespec	file:
+tok_ptr	7-9.c	/^char *tok_ptr;$/;"	v
+tranlate	14-20.c	/^unsigned char tranlate(unsigned char c)$/;"	f
+tranlate	14-21.c	/^unsigned char tranlate(unsigned char c)$/;"	f
+translate	rot13a.c	/^translate(unsigned char c)$/;"	f
+translate	rot13c2.c	/^translate(unsigned char c)$/;"	f
+tty_atexit	18-20.c	/^void tty_atexit(void)$/;"	f
+tty_cbreak	18-20.c	/^int tty_cbreak(int fd)$/;"	f
+tty_raw	18-20.c	/^int tty_raw(int fd)$/;"	f
+tty_reset	18-20.c	/^int tty_reset(int fd)$/;"	f
+tty_termios	18-20.c	/^struct termios *tty_termios(void)$/;"	f
+ttyname	18-15.c	/^char *ttyname(int fd)$/;"	f
+ttysavefd	18-20.c	/^static int		ttysavefd = -1;$/;"	v	file:
+ttystate	18-20.c	/^static enum { RESET, RAW, CBREAK } ttystate = RESET;$/;"	v	typeref:enum:__anon2	file:
+ucred	socket.h	/^struct ucred {$/;"	s
+uid	opend.h	/^	uid_t	uid;$/;"	m	struct:__anon7
+uid	socket.h	/^	__u32	uid;$/;"	m	struct:ucred
+un_lock	apue.h	104;"	d
+unlikely	compiler.h	124;"	d
+unlikely	compiler.h	153;"	d
+unlikely_notrace	compiler.h	98;"	d
+unreachable	compiler.h	163;"	d
+update	15-33.c	/^static int update(long *ptr)$/;"	f	file:
+update	15.15.c	/^static int update(long *ptr)$/;"	f	file:
+waitloc	12-16.c	/^pthread_cond_t waitloc = PTHREAD_COND_INITIALIZER;$/;"	v
+workq	11-15.c	/^struct msg *workq;$/;"	v	typeref:struct:msg
+write_lock	apue.h	100;"	d
+writen	14-24.c	/^ssize_t writen(int fd, const void *ptr, size_t n)$/;"	f
+writew_lock	apue.h	102;"	d
+xsi_version	4-22.c	/^static long xsi_version = 0;$/;"	v	file:
+zeromask	10-24.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+zeromask	14-12.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:
+zeromask	14-7.c	/^static sigset_t newmask, oldmask, zeromask;$/;"	v	file:

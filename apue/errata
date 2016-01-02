@@ -1,0 +1,62 @@
+
+
+The following errors haven't yet been fixed in any printing.
+
+The bibliography is missing an entry for Bovet & Cesati [2006], which is mentioned on page 74. The reference should be:
+Bovet, D. P. and Cesati, M. Understanding the Linux Kernel, Third Edition. O'Reilly Media, Sebastopol, CA.
+On page 929 (Appendix C), Exercise 13.3 should be labeled 13.4.
+Pages 307 and 309 refer to Figure 9.13. It should be 9.12.
+On page 842, the printer_status function has a bug that will potentially affect RISC-based platforms when the IPP header isn't aligned properly. Instead of
+
+struct ipp_hdr *hp;
+hp = (struct ipp_hdr *)cp;
+i = ntohs(hp->status);
+jobid = ntohl(hp->request_id);
+
+the code should be
+
+struct ipp_hdr h;
+memcpy(&h, cp, sizeof(struct ipp_hdr));
+i = ntohs(h.status);
+jobid = ntohl(h.request_id);
+
+Figure 17.14 exposes a bug in most 64-bit versions of Linux that results in msg_controllen being updated improperly. To work around the problem, change
+
+if (msg.msg_controllen != CONTROLLEN)
+
+	to
+
+if (msg.msg_controllen < CONTROLLEN)
+
+	The same problem affects lib/recvfd.c in the source code for the APUE library.
+	The add_worker function on page 828 doesn't set up the linked list properly. The problem only shows up when there is more than one request being processed at the same time. Instead of
+
+if (workers == NULL)
+	workers = wtp;
+	else
+	workers->prev = wtp;
+
+	the code should be
+
+if (workers != NULL)
+	workers->prev = wtp;
+	workers = wtp;
+
+Figure 16.4 on page 592 lists section 3.3 as the reference for close. It should be section 3.5.
+On page 305, the second line from the top contains the phrase "encrypted correctly;" it should be "decrypted correctly" (the cited example is using the crypt command to decrypt the file for printing).
+On pages 127 and 910, references to the utime function should instead refer to the utimes function.
+On page 148, the last paragraph refers to Figure 5.3. It should be Figure 5.2.
+On page 331, the last sentence before the example refers to sigsetjmp. It should be siglongjmp.
+On page 416, the reference to cond_signal should instead be pthread_cond_signal.
+On page 493, the locks are linked from the v-node structure, not the i-node structure.
+On page 632, the last sentence begins with "Well," but it should be "We'll."
+On page 834, "Universal Resource Identifier" should be "Uniform Resource Identifier."
+On page 957, "cat constant" should be removed.
+On page 982, "_SC_NZERO function" should be "_SC_NZERO constant."
+On page 321, in the description for SIGTTOU, write will fail as described only in case (b).
+On page 378, the sig_tstp signal handler has a race. It shouldn't unblock SIGTSTP until after the call to kill.
+On page 950, The Linux Programming Interface is published by No Starch Press (not "No Startch Press").
+On the first line on page 639, the argument to malloc is sizeof(un.sun_path + 1), but it should be sizeof(un.sun_path) + 1.
+On page 250, the third full paragraph from the bottom of the page ends with "three functions." It should be "four functions."
+On page 252, the discussion of the type -f option for the find command should be the -type f option.
+On page 111, the description of the du command's behavior is reversed. When the POSIXLY_CORRECT environment variable is set, du reports 512-byte block units. Otherwise, it defaults to 1,024-byte units.
