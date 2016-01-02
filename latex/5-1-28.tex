@@ -1,0 +1,77 @@
+% 需要编译两到三次才能得到正确的结果
+
+\documentclass [nofonts]{ctexart}
+
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+
+\usepackage{longtable}
+
+\newcommand\meta[1]{\emph{$ \langle $ #1 $ \rangle $}}
+
+\begin{document}
+\begin{longtable}{|l|l|}
+\caption{\texttt{longtable} 环境中的命令汇总}	\\
+\hline
+\endfirsthead
+
+\multicolumn{2}{l}{(续表)}	\\
+\hline
+\endhead
+
+\hline
+\multicolumn{2}{c}{\itshape 接下一页表格 \dots}	\\
+[2ex]
+\endfoot
+
+\hline
+\endlastfoot
+
+\multicolumn{2}{|c|}{环境的水平对齐可选项}	\\
+\hline
+
+留空	& 表格居中
+\footnote{实际上, 留空的对齐方式是由一组命令控制的, 参见宏包文档.}	\\
+\verb=[c]=	& 表格居中	\\
+\verb=[l]=	& 表格左对齐\\
+\verb=[r]=	& 表格右对齐\\
+\hline
+\multicolumn{2}{|c|}{结束表格一行的命令}	\\
+\hline
+\verb=\\=	& 普通的结束一行表格	\\
+\verb=\\[= \meta{距离} \verb=]=	& 结束一行, 并增加额外间距	\\
+\verb=\\*=	& 结束一行, 禁止在此分页	\\
+\verb=\kill=	& 当前行不输出, 只参与宽度计算	\\
+\verb=\endhead=	& 此命令以上的部分是每页的表头	\\
+\verb=\endfirsthead=	& 此命令以上部分是表格第一页的表头	\\
+\verb=\endfoot=	& 此命令以上部分是每页的表尾	\\
+\verb=\endlastfoot=	& 此命令以上部分是最后一页的表尾	\\
+\hline
+\multicolumn{2}{|c|}{标题命令}	\\
+\hline
+\verb=\caption{= \meta{标题} \verb=}=	& 生成带编号的表格标题	\\
+\verb=\caption*{= \meta{标题} \verb=}=	& 生成不带编号的表格标题\\
+\hline
+\multicolumn{2}{|c|}{分页控制}	\\
+\hline
+\verb=\newpage=	& 强制分页	\\
+\verb=\pagebreak[= \meta{程度} \verb=]=	& 允许分页的程度(0--4)	\\
+\verb=\nopagebreak[= \meta{程度} \verb=]=	& 禁止分页的程度(0--4)	\\
+\hline
+\multicolumn{2}{|c|}{脚注控制}	\\
+\hline
+\verb=\footnote=	& 使用脚注 \footnote{普通表格中不能用.}, 注意不能
+	用在表格头尾	\\
+\verb=\footnotemark=	& 单独产生脚注编号, 不能用在表格头尾	\\
+\verb=\footnotetext=	& 单独产生脚注文字	\\
+\hline
+\multicolumn{2}{|c|}{长度参数}	\\
+\hline
+\verb=\LTleft=	& 对齐方式留空时, 表格右边的间距默认为 \verb=\fill=	\\
+\verb=\LTright=	& 对齐方式留空时, 表格右边的间距默认为 \verb=\fill=	\\
+\verb=\LTPRE=	& 表格上方的间距, 默认为 \verb=\bigskipamount=	\\
+\verb=\LTpost=	& 表格下方的间距, 默认为 \verb=\bigskipamount=	\\
+\verb=\LTcapwidth=	& 表格标题的宽度, 默认为 4 in \\
+\end{longtable}
+\end{document}

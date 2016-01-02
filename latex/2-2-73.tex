@@ -1,0 +1,17 @@
+\documentclass[nofonts]{ctexart}
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{AR PL UMing CN}
+\setCJKfamilyfont{ukai}{AR PL UKai CN}
+\newsavebox\verbatimbox 
+\begin{document}
+\begin{lrbox}\verbatimbox
+\begin{minipage}{10em}
+	\begin{verbatim}
+	#!/bin/sh 
+	cat ~/${file}
+	\end{verbatim}
+\end{minipage}
+\end{lrbox}
+\fbox{\usebox\verbatimbox}\quad\fbox{\usebox\verbatimbox}
+\end{document}

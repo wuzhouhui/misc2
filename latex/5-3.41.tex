@@ -1,0 +1,32 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage{graphicx}
+\usepackage{caption}
+
+\begin{document}
+\begin{table}
+	\parbox[b]{.5\textwidth}{\centering
+		\caption{文字表格}
+		\begin{tabular}{|c|c|}
+			\hline
+			图	& 表	\\ \hline 
+		\end{tabular}
+	}%
+	\parbox[b]{.5\textwidth}{\centering
+		\caption{数学表格}
+		$ \begin{array}{|c|c|}
+			\hline \sqrt{2}	& 1.414\dots	\\ \hline
+			\sqrt{3}		& 1.732\dots	\\ \hline
+		\end{array} $}
+\end{table}
+\end{document}

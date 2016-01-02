@@ -1,0 +1,8 @@
+verbatimtex
+%&latex
+\documentclass{article}
+\usepackage{amssymb}
+\begin{document}
+etex
+picture latexmp_picture[];
+latexmp_picture[1]:= btex $\Lleftarrow$ unit circle etex ;

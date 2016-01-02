@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}勾股定理在古代}{2}
+\contentsline {section}{\numberline {2}勾股定理的近代形式}{3}

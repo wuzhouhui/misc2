@@ -1,0 +1,28 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{WenQuanYi Zen Hei}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+
+\begin{document}
+\begin{table}[htbp]
+	\centering
+	\rowcolors{2}{black!20}{black!10}	% 交错的表行
+	\begin{tabular}{crrr}
+		\rowcolor{black!30}	% 第一行的表头单独设置背景色
+		项目	& 数值	& 数值	& 数值	\\
+		A		& 10	& 20	& 30	\\
+		B		& 20	& 15	& 40	\\
+		C		& 15	& 25	& 37	\\
+	\end{tabular}
+\end{table}
+\end{document}

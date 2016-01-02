@@ -1,0 +1,29 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{WenQuanYi Micro Hei Mono}
+\setCJKsansfont{WenQuanYi Micro Hei Mono}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{WenQuanYi Micro Hei Mono}
+\setsansfont{WenQuanYi Micro Hei Mono}
+\setmonofont{FreeMono}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{bicaption}
+
+% 声明 english 选项重定义第二种语言的标签名, 选项没有参数
+\DeclareCaptionOption{english}[]{%
+	\renewcommand\figurename{Figure}%
+	\renewcommand\tablename{Table}
+}
+\captionsetup[bi-second]{english}
+
+\begin{document}
+\begin{figure}
+	\centering{FIGURE}
+	\bicaption{中文标题}{English Title}
+\end{figure}
+\end{document}

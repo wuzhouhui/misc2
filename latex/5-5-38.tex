@@ -1,0 +1,57 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage{siunitx}
+\usepackage{pstricks-add}
+
+\begin{document}
+\begin{figure}[h]
+	\centering
+	\newcommand\iangle{120}
+	\psset{unit=1.6cm, linewidth=0.4pt, algebraic=true}
+	\begin{pspicture}(-3.5, -1.5)(4.5, 1.5)
+		\rput(-2, 0){
+			\psaxes[labels=none, ticks=none,]
+				{->}(0, 0)(-1.2, -1.2)(1.2, 1.2)
+				\pscircle[linewidth=0.8pt](0, 0){1}
+				\pswedge[fillstyle=solid, fillcolor=gray, opacity=0.2]
+					(0, 0){1}{0}{\iangle}
+				\pswedge[fillstyle=solid, fillcolor=gray, opacity=0.4]
+					(0, 0){0.3}{0}{\iangle}
+				\uput[!\iangle\space 2 div](0.3;!\iangle\space 2 div)
+					{\ang{\iangle}}
+				\pnode(1;\iangle){P}
+				\pnode(P|0, 0){P0}
+				\ncline{-}{P}{P0}
+				\uput[\iangle](P){$P$}
+				\uput[d](P0){$P_0$}
+		}
+
+		\psaxes[labels=none, dx=1.57]
+			{->}(0, 0)(0, -1.2)(3.5, 1.2)
+		\psplot[linewidth=0.8pt]{0}{3.5}{sin(x)}
+		\uput[dl](0, 0){$0^\circ$}
+		\uput[d](1.57, 0){$90^\circ$}
+		\uput[d](3.14, 0){$180^\circ$}
+
+		\uput[r](*{3.5} {sin(x)}){$\sin x$}
+		\pnode(!\iangle\space Pi mul 180 div \iangle\space sin){Q}
+		\pnode(Q|0, 0){Q0}
+		\uput[u](Q){$Q$}
+		\uput[d](Q0){$Q_0$}
+		\ncline{-}{Q}{Q0}
+
+		\psline[linestyle=dashed](P)(Q)
+	\end{pspicture}
+	\caption{正弦函数与单位圆 (\textsf{PSTricks} 实现)}
+\end{figure}
+\end{document}

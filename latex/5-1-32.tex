@@ -1,0 +1,27 @@
+% 需要编译两次才能得到正确的结果
+
+\documentclass [nofonts]{ctexart}
+
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+
+\usepackage{tabu}
+\usepackage{longtable}
+
+\begin{document}
+\begin{longtabu} to 0.5 \textwidth{|c|X|X|X|X|X|}
+\hline
+\endhead
+\hline
+\endfoot
+\caption{各种序号}	\\
+\hline
+\endfirsthead
+数字	& 1	& 2	& 3	& 4	& 5		\\
+\hline
+字母	& A	& B	& C	& D	& E		\\
+\hline
+天干	& 甲& 乙& 丙& 丁& 戊	\\
+\end{longtabu}
+\end{document}

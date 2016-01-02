@@ -1,0 +1,21 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage[shellescape]{gmp}
+
+\begin{document}
+% 使用 xelatex -shell-escape 命令编译
+\begin{mpost}
+	draw ((0, 0) -- (0, 2) -- (1, 3.25) -- (2, 2) -- (2, 0)
+		-- (0, 2) -- (2, 2) -- (0, 0) -- (2, 0)) scaled 1cm;
+\end{mpost}
+\end{document}

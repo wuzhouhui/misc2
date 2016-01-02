@@ -1,0 +1,34 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{WenQuanYi Micro Hei Mono}
+\setCJKsansfont{WenQuanYi Micro Hei Mono}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{WenQuanYi Micro Hei Mono}
+\setsansfont{WenQuanYi Micro Hei Mono}
+\setmonofont{FreeMono}
+
+\usepackage{graphicx}
+\usepackage{caption}
+
+\begin{document}
+\begin{table}
+	\centering
+	\caption{并排的表格}
+	\begin{tabular}{|c|c|}
+		\hline
+		图	& 表	\\
+		\hline
+	\end{tabular}
+	\qquad
+	\begin{tabular}{|c|c|}
+		\hline
+		Figure	& Table	\\
+		\hline
+		A		& B		\\
+		\hline
+	\end{tabular}
+\end{table}
+\end{document}

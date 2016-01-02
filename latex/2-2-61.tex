@@ -1,0 +1,33 @@
+% can't be compiled successfully
+\documentclass[nofonts]{ctexart}
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{AR PL UMing CN}
+\setCJKfamilyfont{ukai}{AR PL UKai CN}
+\newcommand\kw{\textbf} % 修饰算法的关键字
+\begin{document}
+\begin{tabbing}
+        \pushtabs % 保存当前制表位
+        算法: 在序列 $A$ 中对 $X$ 做二分检索    \\
+        输入: $A$, $X$ 及下标上下界 $L$, $H$    \\
+        \\qquad\=\kw{integer} $L, H, M, j$      \\
+        \kw{while} \=\+ $L \leq H$ \kw{do} \` $L$ 与 $H$ 是左右分点     \\
+        $M \gets \lfloor(L+H)/2\rfloor$ \`$M$ 是中间分点                \\
+        \kw{case} \=\+                                                  \\
+                condition \= foo \+\kill 
+                $x > A[M]$:\' $H \gets M-1$                             \\
+                $x < A[M]$:\' $H \gets M+1$                             \\
+                \kw{else}:\' \= $j \gets M$ \` 找到 $x$, 返回位置       \\
+                     \> \kw{return}$(j)$                                \\
+                \<\< \kw{endcase} \-\-\-                                \\
+$j \gets 0$                                                             \\
+\kw{return}$(j)$ \-                                                     \\
+\poptabs 
+算法示例:                                                               \\
+$A = \{2, 3, 5, 7, 11\}$, $x=3$                                         \\
+\qquad\=\+ $M$\qquad \= $L$\qquad \= $H$\qquad \=                       \\
+        无      \> 1    \> 5    \> 初始值, 进入循环                     \\
+        3       \> 1    \> 2    \> $H$ 变化                             \\
+        2       \> 无   \> 无   \> 找到 $x$, 输出位置 2
+\end{tabbing}
+\end{document}

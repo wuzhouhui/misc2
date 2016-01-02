@@ -1,0 +1,33 @@
+*.aux	latex 辅助文件
+
+text.tex (latex) text.dvi (dvips) text.ps (ps2pdf) text.pdf
+text.tex (latex) text.dvi (dvipdfm) text.pdf
+text.tex (pdflatex) text.pdf
+
+need just pdf: pdflatex
+need both dvi and pdf: dvipdfm
+need both ps and pdf: dvips & ps2pdf
+
+CJK 包含 4 种中文字体:
+	bsmi: big5 宋体
+	bkai: big5 楷体
+	gkai: 简体字楷体
+	gbsn: 简体字宋体
+
+当使用 pdflatex 编译源文件产生错误时, shell 会长时间地停留在
+pdflatex 命令中, 输入 quit 返回 shell, exit 也可返回 shell, 
+但在返回 shell 后会自动用 vim 打开 latex 源文件.
+
+输入成对的双引号 `` "
+
+显示书名号 \usepackage[T1]{fontenc}
+
+显示系统上安装的所有字体
+fc-list
+
+将所有的中文字体族显示出来
+fc-list "%{family}\n" :lang=zh
+
+打开字体文件(*.ttf)后, 在普通用户下, 点击 install 按钮, 就会把
+字体文件安装在用户目录下
+

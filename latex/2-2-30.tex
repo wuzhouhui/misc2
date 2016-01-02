@@ -1,0 +1,21 @@
+\documentclass[nofonts]{ctexart}
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{AR PL UMing CN}
+\newenvironment{myitemize}{
+	\begin{list}{\textbullet}{%
+		\setlength\topsep{0pt} \setlength\partopsep{0pt}
+		\setlength\parsep{0pt} \setlength\itemsep{0pt}}}
+	{\end{list}
+}
+
+\begin{document}
+\begin{myitemize}
+	\item 中文
+
+		又一段中文
+
+	\item English
+	\item Fran\c{c}ais
+\end{myitemize}
+\end{document}

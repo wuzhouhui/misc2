@@ -1,0 +1,22 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage{siunitx}
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}
+	% 从 0 度到 360 度的正弦函数曲线, rad 函数和单位 r 把
+	% 度转化为弧度
+	\draw[domain=0: rad(360)] plot (\x, {sin(\x r)});
+\end{tikzpicture}
+\end{document}

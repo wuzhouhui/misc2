@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{clrscode}
+\begin{document}
+\begin{codebox}
+\Procname{$\proc{Insertion-Sort}(A)$}
+\li \For $j \gets 2$ \To $\id{length}[A]$
+\li	\Do 
+		$\id{key} \gets A[j]$
+\li		\Comment Insert $A[j]$ into the sorted sequence
+			$A[1 \twodots j-1]$.
+\li		$i \gets j-1$
+\li		\While $i > 0$ and $A[i] > \id{key}$
+\li			\Do 
+				$A[i+1] \gets A[i]$
+\li				$i \gets i-1$
+			\End 
+\li		$A[i+1] \gets \id{key}$
+	\End 
+\end{codebox}
+\end{document}

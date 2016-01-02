@@ -1,0 +1,25 @@
+\documentclass[nofonts]{ctexart}
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{AR PL UMing CN}
+\newcounter{clist}
+\renewcommand\theclist{%
+	\chinese{clist}}
+\newenvironment{clist}
+{\begin{list}{(\theclist)}{%
+	\usecounter{clist}%
+	\settowidth\labelwidth{(数字)}%
+	\setlength\itemindent\labelwidth
+	\setlength\listparindent{2em}}}%
+{\end{list}}
+\begin{document}
+\begin{clist}
+	\item 一
+
+	\item 二
+
+	\item 三
+
+	\item 四
+\end{clist}
+\end{document}

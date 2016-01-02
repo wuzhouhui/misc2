@@ -1,0 +1,23 @@
+\documentclass[nofonts]{ctexbook}
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+\usepackage{glossaries}
+\makeglossaries
+\begin{document}
+\newglossaryentry{gloss}{
+	name=glossary,
+	description={A vacabulary with annotation for a particular subject},
+	plural=glossaries
+}
+
+\Glspl{gloss} are important for technical documents.
+
+\newglossaryentry{sec}{
+	name=分节,
+	description={把文章分成节},
+}
+\gls{sec}对于长文档非常重要
+
+\printglossaries
+\end{document}

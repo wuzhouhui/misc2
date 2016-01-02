@@ -1,0 +1,23 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw[thick] (0, 0) circle (1);
+	\fill[fill=gray, fill opacity=0.3]
+		(0, 0) -- (0: 1) arc (0: 120: 1) -- cycle;
+	\filldraw[fill=gray, fill opacity=0.5]
+		(0, 0) -- (0: 0.3) arc (0: 120: 0.3) -- cycle;
+\end{tikzpicture}
+\end{document}

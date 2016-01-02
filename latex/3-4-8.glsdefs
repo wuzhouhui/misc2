@@ -1,0 +1,60 @@
+\ifglsentryexists{gloss}{}%
+{%
+\gls@defglossaryentry{gloss}%
+{%
+name={glossary},%
+sort={glossary},%
+type={main},%
+first={glossary},%
+firstplural={glossaries},%
+text={glossary},%
+plural={glossaries},%
+description={A vacabulary with annotation for a particular subject},%
+descriptionplural={A vacabulary with annotation for a particular subject},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sec}{}%
+{%
+\gls@defglossaryentry{sec}%
+{%
+name={分节},%
+sort={分节},%
+type={main},%
+first={分节},%
+firstplural={分节s},%
+text={分节},%
+plural={分节s},%
+description={把文章分成节},%
+descriptionplural={把文章分成节},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

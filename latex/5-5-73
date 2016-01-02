@@ -1,0 +1,15 @@
+guide star(int n - 5, real r0 = 1)
+{
+	guide unistar;
+	if (n < 5) return nullpath;
+	real theta = 180 / n;
+	real r = Cos(2 * theta) / Cos(theta);
+	for (int k = 0; k < n; k++)
+		unistar = unistar -- dir(90 + 2 * k * theta) 
+			-- r * dir(90 + (2 * k + 1) * theta);
+	unistar = unistar -- cycle;
+	return scale(r0) * unistar;
+}
+
+for (int i = 5; i <= 8; i++)
+ filldraw(shift(i * 2cm, 0) * star(i, 1cm), lightgray, gray + 1mm);

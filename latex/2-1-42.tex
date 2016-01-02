@@ -1,0 +1,23 @@
+\documentclass[nofonts]{ctexart}
+% 西方正文和数学字体
+\let\hbar\relax % 解决 xunicode 与 fourier 的符号冲突
+\usepackage{fourier}
+% 设置默认编码为 T1, 以支持 fourier 宏包
+\usepackage[T1]{fontenc}
+% 定义新的西文 Times 字体族
+\newfontfamily\timesnew{Times New Roman}
+% 设置西文等宽字体, 并重定义 \ttfamily 来切换到 EU1 编码
+\setmonofont{Consolas}
+\let\oldttfamily\ttfamily
+\def\ttfamily{\oldttfamily\fontencoding{EU1}\selectfont}
+% 设置中文字体
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+\begin{document}
+Utopia text and $\sum math$ fonts.
+
+汉字楷书与 {\timesnew Times New Roman} 字体.
+
+\texttt{Consolas 0123}
+\end{document}

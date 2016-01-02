@@ -1,0 +1,21 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{WenQuanYi Zen Hei}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage[all, pdf]{xy}
+
+\begin{document}
+\xymatrix{
+	a	& b\ar[rd]	& a+b		\\ % 指向右下方
+	1	& 2			& 3\ar"1,1"	\\
+	\ar"1,1";"2,2"	% 直接从 (1,1) 到 (2,2)
+}
+\end{document}

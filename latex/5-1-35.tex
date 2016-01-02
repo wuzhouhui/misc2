@@ -1,0 +1,23 @@
+
+\documentclass[nofonts]{ctexart}
+
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\begin{document}
+\begin{tabular}{*{6}{c}}
+	\toprule
+	\multirow{2}*{姓名}	& \multicolumn{2}{c}{文科}	& \multicolumn{2}{c}
+	{理科} &	\\
+	\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-6}
+	\morecmidrules\cmidrule(lr){6-6}	& 历史	& 文学	& 物理	& 化学
+		& 总评	\\
+	\midrule
+	张三	& A	& A	& B	& A	& A	\\
+	\bottomrule
+\end{tabular}
+\end{document}

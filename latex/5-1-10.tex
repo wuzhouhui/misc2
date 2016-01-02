@@ -1,0 +1,19 @@
+% can't be compiled successfully
+\documentclass[nofonts]{ctexart}
+
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+
+\usepackage{dcolumn}
+
+\begin{document}
+\vert'tabular' 环境可以在
+$ \left( 
+	\begin{tabular}{@{}c@{}}
+		文本	\\
+		数学
+	\end{tabular}
+\right) $
+模式下通用.
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{CJK}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+\begin{document}
+\begin{CJK*}{GBK}{jbs}
+\title{\huge C\TeX\ 2.3.3 下安装新字体}
+\author{\VimMailURL{CarlMax}{Tom.com}}
+\maketitle
+
+由于单位公文用小标宋，所以不得已试装新字体。经过一番折腾后，终于成功，以下便是我的经验，希望能有助于大家。
+\begin{enumerate}
+\item 开始前要确定 C\TeX 可以正常使用，最好有 Total Commander 以方便文件拷贝
+\item 首先建一暂存子目录如 newfonts
+\item 拷贝 gbkfonts 目录下所有文件到 newfonts
+\item 拷贝新字体 xbs.ttf 到 newfonts
+\item 编辑 gbkfonts.ini ，增加一行\\
+xbs\footnote{按NFSS规定，定义字族的字数不可超过五个字母} xbssl
+GBK-XiaoBiaoSong 8006 \
+\item 运行 gbkfonts -c -gbk xbs.ttf xbs
+% \item 拷贝 newfonts/ xbs.ttf 到 localtexmf/ fonts/ truetype/
+\item 拷贝 newfonts/ dvipdfm/ config/ gbkxbs.map 到 localtexmf/ dvipdfm/ chinese/ t1-gbkxbs.map
+\item 拷贝 newfonts/ dvips/ chinese/ gbkxbs 到
+localtexmf/ pdftex/ chinese/
+\item 拷贝 newfonts/ fonts/ afm/ 到 localtexmf/ fonts/ afm/
+\item
+新建两目录\\
+localtexmf/ fonts/ tfm/ chinese/ gbkxbs\\
+localtexmf/ fonts/ tfm/ chinese/ gbkxbssl
+\item 拷贝 newfonts/ fonts/ tfm/ chinese/ gbkxbs/ gbkxbs??.tfm 到 localtexmf/ fonts/ tfm/
+chinese/ gbkxbs/
+\item 拷贝 newfonts/fonts/tfm/chinese/gbkxbs/gbkxbssl??.tfm 到 local\-texmf/ fonts/ tfm/
+chinese/ gbkxbssl/
+\item 拷贝 newfonts/fonts/ type1/ 到 localtexmf/ fonts/ type1/
+\item 拷贝 newfonts/ pdftex/ config/ gbkxbs.map 到 \\
+localtexmf/ pdftex/ chinese/ ttf-gbkxbs.map
+\item 拷贝 newfonts/ tex/ 到 localtexmf/ tex/
+% \item 编辑 localtexmf/ tex/ latex/ CJK/ GB/ c10fs.fd，替换文件中的``fs''为 ``xbs''，另存为c10xbs.fd。照此法分别修改 c11fs.fd、c20fs.fd、c21fs.fd 得到 c11xbs.fd、c20xbs.fd、c21xbs.fd。
+% \item 编辑 localtexmf/ dvips/ chinese/ t1-gbkfs.map 替换文件中的``fs''为 ``xbs'' ，``FangSong'' 为 ``XiaoBiaoSong''另存为 t1-gbkxbs.map
+\item 拷贝　newfonts/ cjk.map 到　localtexmf/ dvips/ chinese/ t1-gbkxbs.map
+\item 把 newfonts/ ttfonts.map 文件中的内容追加入\footnote{用 TotalCommander 拷贝时，在弹出的对话框中选``追加''一项即可}localtexmf/ ttf2tfm/ base/ ttfonts.map
+\item 把 newfonts/ cid-x.map 文件中的内容追加入　localtexmf/ dvipdfm /config/ cid-x.map
+\item 编辑 localtexmf/ web2c/ updmap.cfg , 在最后增加一行 \\
+Map t1-gbkxbs.map
+% \item 运行 mkfntmap
+\item 运行 mktexlsr
+\item 搞定！
+\end{enumerate}
+
+
+\end{CJK*}
+\end{document}

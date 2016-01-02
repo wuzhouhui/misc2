@@ -1,0 +1,18 @@
+\documentclass[nofonts]{ctexart}
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{AR PL UMing CN}
+\setCJKfamilyfont{ukai}{AR PL UKai CN}
+\usepackage{theorem}
+\newcounter{chapter}
+\theoremstyle{changebreak}
+\theoremheaderfont{\sffamily\bfseries}
+\theorembodyfont{\normalfont}
+\newtheorem{definition}{定义}[chapter]
+
+\begin{document}
+\stepcounter{chapter}
+\begin{definition}
+	有一个角是直角的三角形是 \emph{\CJKfamily{ukai} 直角三角形}.
+\end{definition}
+\end{document}

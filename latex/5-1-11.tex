@@ -1,0 +1,16 @@
+\documentclass[nofonts]{ctexart}
+
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+
+\begin{document}
+% 第 1 列前是原始间距, 第 2 列前只有 1em 间距,
+% 第 3, 4 列前则是原始间距加 1em
+\begin{tabular}{|c|@{\extracolsep{1em}}c|c|c|}
+	\hline
+	1 & 2 & 3 & 4 \\
+	1 & 2 & 3 & 4 \\
+	\hline
+\end{tabular}
+\end{document}

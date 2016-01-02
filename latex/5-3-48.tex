@@ -1,0 +1,25 @@
+% can't be compiled successfully
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+\floatstyle{ruled}
+\restylefloat{flowchart}
+\begin{flowchart}
+	\fbox{A} $\longrightarrow$ \fbox{B}	\\
+	\fbox{C} $\longrightarrow$ \fbox{D}
+	\caption{基本流程图}
+\end{flowchart}
+\end{document}

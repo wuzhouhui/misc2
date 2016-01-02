@@ -1,0 +1,296 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage{CJK}
+\usepackage{marvosym}	%就为了完美地显示@{\MVAt}这一个符号
+\usepackage{amsmath}
+\usepackage{amsbsy}
+\usepackage{amstext}
+\usepackage{amsxtra}
+\usepackage{color}
+%\usepackage{upquote}
+\usepackage{fancyhdr}
+\usepackage{fancyvrb}
+\usepackage{footnpag}
+\usepackage{comment}
+\usepackage[dvipdfm]{graphicx}
+\usepackage[
+bookmarks=true,
+bookmarksopen=true,
+bookmarksnumbered=true,
+pdfstartview=FitH,
+CJKbookmarks,dvipdfm,
+pdfauthor={ZhaoRuFei: slimzhao@hotmail.com},
+pdftitle={VIM用户手册中文版(7.0版)},
+pdfcreator={dvipdfmx},
+pdfsubject={VIM用户手册中文版(7.0版)},
+pdfkeywords={Vim, vi},
+colorlinks=true,
+breaklinks=true,
+linkbordercolor={1 1 0.94902},
+urlbordercolor={1 1 0.94902},
+linkcolor=blue
+]{hyperref}
+%setting Height
+\addtolength{\voffset}{-.5in}
+%页眉中文字的高度
+\headheight 12pt
+
+\topmargin 0in
+%页眉到正文之间的距离
+\headsep .5cm
+\textheight 0.8\paperheight
+%\textheight 0.8\paperheight
+%\topmargin .5\paperheight
+%\addtolength{\topmargin}{-0.5\textheight}
+%\addtolength{\topmargin}{-1in}
+\pagestyle{fancy}
+%setting Width
+\textwidth 0.65\paperwidth
+\oddsidemargin 0.5\paperwidth
+\addtolength{\oddsidemargin}{-0.5\textwidth}
+\addtolength{\oddsidemargin}{-1in}
+\evensidemargin \oddsidemargin
+\renewcommand{\baselinestretch}{1.25}
+% \showthe\baselinestretch
+%\showthe\baselineskip
+\baselineskip 12pt
+\parskip 0.7\baselineskip
+
+% \flushbottom
+
+%定义颜色
+\definecolor{VimCautionColor}{rgb}{0,0,0} %Black
+\definecolor{VimCommonDestColor}{rgb}{1,0,1} %(255,0,255)
+\definecolor{VimCommonSrcColor}{rgb}{0,0.545098,0.545098} %(0,139,139)DarkCyan
+\definecolor{VimFileNameColor}{rgb}{0,0.545098,0.545098} %(0,139,139)DarkCyan
+\definecolor{VimFileNameDestColor}{rgb}{1,0,1} %(255,0,255)magenta
+\definecolor{VimOptionColor}{rgb}{0.180392,0.545098,0.341176} %(46 139  87)SeaGreen
+\definecolor{VimSecDestColor}{rgb}{1,0,1} %(255,0,255)magenta
+\definecolor{VimSecSrcColor}{rgb}{0,0.545098,0.545098} %(0,139,139)DarkCyan
+\definecolor{VimURLColor}{rgb}{0.627451,0.125490,0.941176} %(160,32,240)purple
+\definecolor{VimSpecialCharColor}{rgb}{0.415686,0.352941,0.803922} %(106,90,205)
+%\definecolor{VimBackgroundColor}{rgb}{1,1,0.94902} %(255,255,242)
+\definecolor{VimBackgroundColor}{rgb}{1,1,1} %(255,255,242)
+\definecolor{VimMyChunkNoteColor}{rgb}{1,0,0} %(red)
+\definecolor{VimHeaderColor}{rgb}{.7, .7, .7} %(FF FF E8)
+\definecolor{VimDispAfterCommandColor}{rgb}{.66666667, 0, 1} %(FF FF E8) Purple
+\definecolor{VimVisualBkColor}{rgb}{.878431, .878431, .878431} %(224, 224, 224)
+%定义颜色-END
+%定义页眉, 页脚的下划线颜色.--BEGIN
+\renewcommand{\headrule} { {\color{red} \hrule} }
+%定义页眉, 页脚的下划线颜色.--END
+%定义XML 标记-> TEX命令
+\newcommand{\VimNewChapter}[0]{\newpage}
+\newcommand{\VimCautionTitle}[1]{\noindent\colorbox{yellow}{\textcolor{blue}{#1}}}
+\newcommand{\VimCaution}[1]{\begin{center}\begin{minipage}{0.8\textwidth}{\textcolor{VimCautionColor}{#1}}\end{minipage}\end{center}}
+\newcommand{\VimCommonDest}[1]{\textcolor{VimCommonDestColor}{#1}}
+\newcommand{\VimCommonSrc}[1]{\textcolor{VimCommonSrcColor}{\texttt{$\mid$#1$\mid$}}}
+\newcommand{\VimFileName}[1]{\noindent\textcolor{VimFileNameColor}{$\mid$#1$\mid$}}
+\newcommand{\VimFileNameDest}[2]{{\noindent{\underline{\textcolor{VimFileNameDestColor}{#1}}}\hfill\underline{#2}}\\}
+\newcommand{\VimOption}[1]{\textcolor{VimOptionColor}{\texttt{\char"0D{}{\bfseries{}#1}\char"0D}}}
+\newcommand{\VimSecDest}[2]{\hypertarget{#1}{}\pdfbookmark[2]{#1 #2}{#1}\noindent\textcolor{VimSecDestColor}{#1}\hspace{.5cm}#2}
+%Sub section
+\newcommand{\VimSubSection}[1]{%
+{\large\noindent{\color{blue}$\overline{\underline{\textcolor{black}{\mbox{#1}}}}$}}}
+
+%Same as VimSubSection, but not break line, since there's a VimCommonDest
+\newcommand{\VimSubSectionDest}[1]{{\large\CJKfamily{kai}\noindent{\color{blue}\underline{\textcolor{black}{#1}}}}}
+\newcommand{\VimSecSrc}[1]{\textcolor{VimSecSrcColor}{\hyperlink{*#1*}{$\mid$#1$\mid$}}}
+\newcommand{\VimSecList}[2]{{\noindent\textcolor{VimSecSrcColor}{\hyperlink{*#1*}{$\mid$#1$\mid$}}}\hspace{.5cm}#2\\}
+\newcommand{\VimSpecialChar}[1]{\textcolor{VimSpecialCharColor}{\texttt{<#1>}}}
+%[count] 
+\newcommand{\VimSpecialCharSquare}[1]{\textcolor{VimSpecialCharColor}{\texttt{[}#1\texttt{]}}}
+%The following N for Normal, or no <>, CTRL-] vs <Esc>
+\newcommand{\VimNSpecialChar}[1]{\textcolor{VimSpecialCharColor}{\texttt{#1}}}
+\newcommand{\VimURL}[1]{\begin{quote}\textcolor{VimURLColor}{\href{#1}{#1}}\end{quote}}
+\newcommand{\VimInlineURL}[1]{~\textcolor{VimURLColor}{\href{#1}{#1}~}}
+\newcommand{\VimMailURL}[2]{\texttt{<}\textcolor{VimURLColor}{\href{mailto:#1@#2}{#1{\raisebox{2pt}{\footnotesize\MVAt}}#2}}\texttt{>}}
+%\newcommand{\VimMailURLTS}[2]{\texttt{<}\textcolor{VimURLColor}{\href{mailto:#1@#2}{#1{\SMALL\MVAt}#2}}\texttt{>}}
+%\newcommand{\VimMailURLT}[2]{\texttt{<}\textcolor{VimURLColor}{\href{mailto:#1@#2}{#1@#2}\texttt{>}}}
+\newcommand{\VimSepartor}[0]{{\noindent\newline\hrule}}
+\newcommand{\VimBookTitle}[1]{{\Large\begin{center}\textcolor{blue}{#1}\end{center}}}
+\newcommand{\VimBookChapter}[1]{{\CJKfamily{li}\Large\begin{center}#1\end{center}}}
+\newcommand{\VimTopicCata}[1]{{\CJKfamily{kai}\Large\begin{center}\textcolor{red}{#1}\end{center}}}
+\newcommand{\VimChapterEnd}[1]{ {\setlength{\parindent}{0mm}\fbox{\parbox{\textwidth}{#1}} } }
+\newcommand{\VimSibleChapter}[1]{\VimChapterEnd{#1}}
+\newcommand{\VimQuestion}[1]{\noindent{#1}}
+\newcommand{\VimPart}[1]{{\begin{center}\CJKfamily{kai}\Large{#1}\end{center}}}
+\newcommand{\VimOneTwoThree}[1]{{\begin{flushleft}\noindent\large{#1}\end{flushleft}}}
+\newcommand{\VimDQuote}[1]{\texttt{"#1"}}
+\newcommand{\VimSingleQuote}{\'{}}
+\newcommand{\VimCPP}{C\texttt{++}}
+\newcommand{\VimBacktick}{\`{}}
+\newcommand{\VimSharp}{\texttt{\#}}
+\newcommand{\VimTT}[1]{\texttt{#1}}
+%This trick is derived from <<Making Tex work>>
+\newcommand{\VimBS}[0]{\char92\relax}
+% Always break to new line
+\newcommand{\VimToRight}[1]{\hfill{#1}\\}
+\newcommand{\VimMyFootnote}[1]{\footnote{\CJKfamily{jbs}#1}}
+
+\definecolor{VimDiffDelBgColor}{rgb}{.8784,1,1} %LightCyan--from google
+\definecolor{VimDiffAddBgColor}{rgb}{.65098, .79215,.941176}
+%LightBlue -- from google
+\newcommand{\VimDiffDel}[1]{\colorbox{VimDiffDelBgColor}{\textcolor{blue}{#1}}}
+\newcommand{\VimDiffAdd}[1]{\colorbox{VimDiffAddBgColor}{#1}}
+%定义Bookmark和页眉页脚
+%强制页眉
+\newcommand{\VimBookMark}[2]{
+\fancyhead[LE,LO]{  \textcolor{VimHeaderColor}{\thepage} }
+\fancyhead[RE,RO]{  \textcolor{VimHeaderColor}{#1} }
+\hypertarget{#2}{}\pdfbookmark[1]{#1}{#2}
+}
+\newcommand{\VimBookMarkLevelTwo}[2]{
+\fancyhead[LE,LO]{  \textcolor{VimHeaderColor}{\thepage} }
+\fancyhead[RE,RO]{  \textcolor{VimHeaderColor}{#1} }
+\hypertarget{#2}{}\pdfbookmark[2]{#1}{#2}
+}
+%\fancyhead[LE,LO]{  \textcolor{VimHeaderColor}{\thepage} }
+%%为了应付verbatim 中不能用footnote的问题
+\newcommand{\VimMyInLineFootnote}[1]{{\small{[[#1]]}}}
+\newcommand{\VimSQ}[0]{\texttt{\char"0D{}}}
+\newcommand{\VimSQstr}[1]{\texttt{\char"0D{}#1\char"0D{}}}
+\newcommand{\VimNoIndent}[0]{\noindent}
+\newcommand{\VimPercent}{\texttt{\%}}
+\newcommand{\VimLaTeX}[0]{\fontfamily{rm}\LaTeX}
+\newcommand{\VimTeX}[0]{\fontfamily{rm}\TeX}
+\DefineVerbatimEnvironment{VimVBshcmd}{Verbatim}
+  {gobble=0,rulecolor=\color{black},formatcom=\color{blue},samepage=true,numbers=none,numbersep=0mm, frame=single,framerule=0.1pt,label=shell command,fontsize=\small}
+\DefineVerbatimEnvironment{VimVBurl}{Verbatim}
+  {gobble=0,rulecolor=\color{black},formatcom=\color{blue},samepage=true,numbers=none,numbersep=0mm, frame=single,framerule=0.1pt,label=URL,fontsize=\small}
+\DefineVerbatimEnvironment{VimVBexcmd}{Verbatim}
+  {gobble=0,rulecolor=\color{black},formatcom=\color{blue},samepage=true,numbers=none,numbersep=0mm, frame=single,framerule=0.1pt, label=ex command,fontsize=\small}
+\DefineVerbatimEnvironment{VimVBnormalcmd}{Verbatim}
+  {gobble=0,rulecolor=\color{black},formatcom=\color{blue},samepage=true,numbers=none,numbersep=0mm, frame=single,framerule=0.1pt,label=normal mode command,fontsize=\small}
+\DefineVerbatimEnvironment{VimVBCodeSippet}{Verbatim}
+  {gobble=0,rulecolor=\color{black},formatcom=\color{blue},samepage=true,numbers=none,numbersep=0mm, frame=single,framerule=0.1pt,label=code,fontsize=\small}
+\DefineVerbatimEnvironment{VimVBDisplay}{Verbatim}
+  {gobble=0,rulecolor=\color{black},formatcom=\color{blue},samepage=true,numbers=none,numbersep=0mm,frame=single,framerule=0.1pt,label=Display,fontsize=\small}
+\DefineVerbatimEnvironment{VimVBList}{Verbatim}
+  {gobble=0,rulecolor=\color{black},formatcom=\color{blue},samepage=true,numbers=none,numbersep=0mm, frame=single,framerule=0.1pt,label=List,fontsize=\small}
+%定义XML 标记-> TEX命令 - END
+
+\renewcommand{\familydefault}{cmtt}
+\begin{document}
+\begin{CJK*}{GBK}{jbs}
+
+%\begin{CJK*}{GBK}{STSong-Light}
+%Define The Version number of the doc
+%\AtBeginDvi{\special{pdf:tounicode STSongSTD-Light}}   % GBK    -> Unicode
+\newcommand{\VimDocVer}{Vim 7.0版.}
+
+\setbox0=\hbox{　}
+\newdimen\ccwd \ccwd=\wd0 % 字宽 width
+\setlength{\parindent}{2\ccwd}
+%%下面是替代方案, 需要CJK 4.5.1 以上版本
+%%\setlength{\parindent}{\CJKindent}
+\newcommand{\VimSubTextCaption}[1]{{\noindent{#1}}}
+%Keep a blank line before and after VimSubText
+\newcommand{\VimSubText}[1]{%
+{\setlength{\parindent}{0mm}\hspace{3\ccwd}\parbox{0.8\textwidth}{#1}}}
+
+\newcommand{\VimBeginMyChunkNote} {%
+\centerline{\textcolor{VimMyChunkNoteColor}%
+{================译者注---开始================}}}
+
+\newcommand{\VimEndMyChunkNote}%
+{\centerline{\textcolor{VimMyChunkNoteColor}%
+{================译者注---结束================}}}
+
+\newcounter{gInPageSrc}
+\newcounter{gInPageDest}
+\newcounter{myfnmark}
+\newcounter{myfntext}
+\newcommand{\VimNewFooterInVerbatim}{\setcounter{myfnmark}{0}\setcounter{myfntext}{0}}
+
+\newcommand{\VimFooterMarkInVerbatim}{%
+\addtocounter{gInPageSrc}{1}%
+\addtocounter{myfnmark}{1}%
+\hyperlink{InPageFootnote\thegInPageSrc}{$\textcolor{red}{^\alph{myfnmark}}$}%
+}
+
+\newcommand{\VimFooterTextInVerbatim}[1]{%
+\addtocounter{gInPageDest}{1}%
+\addtocounter{myfntext}{1}%
+\footnotesize{%
+\hypertarget{InPageFootnote\thegInPageDest}{}%
+% 解决这样的问题：当只有一条页内脚注时，不换行，如果此时换行将导致整个段
+% 落多出来一个空行，这个空行占用空间并且因为段落的背景色被定义所以很碍眼
+% 使用 \newline \linebreak、\hfill 这些方案都不行
+\ifnum\themyfntext>1\\\fi%
+\textcolor{red}{$^{\alph{myfntext}}$} #1%
+}}
+
+%% same as \VimFooterTextInVerbatim but never break line
+%% in usr_41.tex there's non-consecutive Footnote Text chunk, for which
+%% the previous content of the second Footnote Text is not appropriate
+%% for a line break
+\newcommand{\VimFooterTextInVerbatimNoLineBreak}[1]{%
+\addtocounter{gInPageDest}{1}%
+\addtocounter{myfntext}{1}%
+\footnotesize{%
+\hypertarget{InPageFootnote\thegInPageDest}{}%
+\textcolor{red}{$^{\alph{myfntext}}$} #1%
+}}
+
+\newcommand{\VimAt}{{\tiny\MVAt}}
+
+%%To eliminate overfull, too wide, and so on, default value of
+%%CJKtolerance is 400
+\sloppy
+\renewcommand{\CJKtolerance}{800}
+\pagecolor{VimBackgroundColor}
+\input{cover.tex}
+\input{myword.tex}
+\input{my_feihua.tex}
+\input{second_edition.tex}
+\input{about_603.tex}
+\input{about_70f.tex}
+\input{about_71.tex}
+\input{about_72.tex}
+\input{latex.tex}
+\input{src_down.tex}
+\input{feedback.tex}
+\input{usr_toc.tex}
+\input{usr_01.tex}
+\input{usr_02.tex}
+\input{usr_03.tex}
+\input{usr_04.tex}
+\input{usr_05.tex}
+\input{usr_06.tex}
+\input{usr_07.tex}
+\input{usr_08.tex}
+\input{usr_09.tex}
+\input{usr_10.tex}
+\input{usr_11.tex}
+\input{usr_12.tex}
+\input{usr_20.tex}
+\input{usr_21.tex}
+\input{usr_22.tex}
+\input{usr_23.tex}
+\input{usr_24.tex}
+\input{usr_25.tex}
+\input{usr_26.tex}
+\input{usr_27.tex}
+\input{usr_28.tex}
+\input{usr_29.tex}
+\input{usr_30.tex}
+\input{usr_31.tex}
+\input{usr_32.tex}
+\input{usr_40.tex}
+\input{usr_41.tex}
+\input{usr_42.tex}
+\input{usr_43.tex}
+\input{usr_44.tex}
+\input{usr_45.tex}
+\input{usr_90.tex}
+\input{interview.tex}
+\input{7habits.tex}
+\input{c_c++.tex}
+%这个newpage是为了避免错误的: http://lists.debian.org/debian-chinese-gb/2001/06/msg00011.html
+% 另一个重点是在文档末端，未退出 CJK 环境以前，必须加个 \newpage，
+% 否则 LaTeX 将会尝试在 CJK 环境以外排版 header/footer 的中文字，
+% 那样就出问题了。
+
+\newpage
+\end{CJK*}
+\end{document}

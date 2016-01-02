@@ -1,0 +1,14 @@
+% Written by metapost version 1.902
+begingroup save _p,_r,_s,_n; picture _p; _p=nullpicture;
+string _n[];
+vardef _s(expr _t,_f,_m,_x,_y)(text _c)=
+  addto _p also _t infont _f scaled _m shifted (_x,_y) _c; enddef;
+_n0="msam10";
+_s("W",_n0,1.00000,0.0000,0.0000,);
+_n1="cmr10";
+_s("unit",_n1,1.00000,13.2835,0.0000,);
+_s("circle",_n1,1.00000,34.3158,0.0000,);
+setbounds _p to (0,-1.3615)--(57.0362,-1.3615)--
+ (57.0362,6.9185)--(0,6.9185)--cycle;
+_p endgroup
+mpxbreak
