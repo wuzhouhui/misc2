@@ -1,0 +1,30 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{WenQuanYi Zen Hei}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage{pstricks}
+\usepackage{pstricks-add}
+
+\begin{document}
+\psset{linewidth=0.4pt}
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+	\psaxes[labels=none,ticks=none]{->}(0,0)(-1.2,-1.2)(1.2,1.2)
+	\pscircle[linewidth=0.8pt](0,0){1}
+	\pswedge[fillstyle=solid,fillcolor=gray,opacity=0.2](0,0){1}{0}{120}
+	\pswedge[fillstyle=solid,fillcolor=gray,opacity=0.4](0,0){0.3}{0}{120}
+	\uput[60](0.3;60){$120^\circ$}
+	\pnode(1;120){P}
+	\pnode(P|0,0){P0}
+	\ncline{-}{P}{P0}
+	\uput[120](P){$P$}
+	\uput[d](P0){$P_0$}
+\end{pspicture}
+\end{document}

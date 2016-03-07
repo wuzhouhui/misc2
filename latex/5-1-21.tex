@@ -1,0 +1,19 @@
+\documentclass [nofonts] {ctexart}
+
+\setCJKmainfont {AR PL UKai CN}
+\setCJKsansfont {AR PL UKai CN}
+\setCJKmonofont {AR PL UKai CN}
+
+\usepackage {makecell}
+\usepackage {rotating}
+
+\begin {document}
+\settowidth\rotheadsize {\theadfont 数学课}
+\begin {tabular} {|c|c|}
+\hline
+\thead {姓名}	& \rothead {数学课 \\ 成绩}	\\
+\hline
+张三	& 100	\\
+\hline
+\end {tabular}
+\end {document}

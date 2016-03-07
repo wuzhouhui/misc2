@@ -1,0 +1,8 @@
+\contentsline {chapter}{前言}{ii}
+\contentsline {chapter}{第一版前言}{iii}
+\contentsline {chapter}{\numberline {第一章\hspace {0.3em}}教程式的介绍}{1}
+\contentsline {section}{\numberline {1.1}开始}{1}
+\contentsline {section}{\numberline {1.2}变量和数学表达式}{3}
+\contentsline {section}{\numberline {1.3}for 语句}{6}
+\contentsline {section}{\numberline {1.4}符号常量}{7}
+\contentsline {chapter}{\numberline {第二章\hspace {0.3em}}类型, 操作符和表达式}{8}

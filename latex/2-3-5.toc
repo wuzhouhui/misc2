@@ -1,0 +1,13 @@
+\contentsline {part}{I\hspace {1em}Introduction}{5}
+\contentsline {chapter}{\numberline {1}Backgound}{7}
+\contentsline {part}{II\hspace {1em}Classification}{9}
+\contentsline {chapter}{\numberline {2}Natural Language}{11}
+\contentsline {chapter}{\numberline {3}Computer Language}{13}
+\contentsline {section}{\numberline {3.1}Machine Language}{13}
+\contentsline {section}{\numberline {3.2}High Level Language}{13}
+\contentsline {subsection}{\numberline {3.2.1}Compiled Language}{13}
+\contentsline {subsection}{\numberline {3.2.2}Intepreted Language}{13}
+\contentsline {subsection}{\numberline {3.2.3}Lisp}{13}
+\contentsline {paragraph}{Common List}{13}
+\contentsline {paragraph}{Scheme}{13}
+\contentsline {subsection}{\numberline {3.2.4}Perl}{13}

@@ -1,0 +1,22 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{WenQuanYi Zen Hei}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage{pstricks}
+\usepackage{pstricks-add}
+
+\begin{document}
+\psset{linewidth=0.4pt}
+\begin{pspicture}(-0.5,0)(1,1)
+	\psaxes[labels=none,ticks=none]{->}(1.2,1.2)
+	\pswedge[fillstyle=solid,fillcolor=gray,opacity=0.2](0,0){1}{0}{120}
+\end{pspicture}
+\end{document}

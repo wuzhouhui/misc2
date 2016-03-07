@@ -1,0 +1,22 @@
+\documentclass[nofonts]{ctexart}
+
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+
+\usepackage{blkarray}
+
+\begin{document}
+\[
+	\begin{blockarray}{ccc}
+	\begin{block}{cc\}\BAmultirow{4em}}
+		1	& 2	& 自然数	\\
+		3	& 4	& {}		\\ % 空白 {} 点位
+	\end{block}
+	\begin{block}{cc\}l}
+		-1.5	& \frac{1}{2}	& \BAmultirow{4em}{实数}	\\
+		3.5		& 40			&							\\
+	\end{block}
+	\end{blockarray}
+\]
+\end{document}

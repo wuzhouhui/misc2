@@ -1,0 +1,15 @@
+\documentclass[nofonts]{ctexart}
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{AR PL UMing CN}
+\newcounter{mycnt}
+\setcounter{mycnt}{0}
+\renewcommand\themycnt{\arabic{mycnt}}
+\begin{document}
+\stepcounter{mycnt}\themycnt		\par
+\stepcounter{mycnt}\themycnt		\par
+\addtocounter{mycnt}{1}\themycnt	\par
+\addtocounter{mycnt}{1}\themycnt	\par
+\addtocounter{mycnt}{-1}\themycnt	\par
+\addtocounter{mycnt}{-1}\themycnt	\par
+\end{document}

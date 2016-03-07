@@ -1,0 +1,20 @@
+\documentclass[nofonts]{ctexart}
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{AR PL UMing CN}
+\setCJKfamilyfont{ukai}{AR PL UKai CN}
+\usepackage[thmmarks]{ntheorem}
+{ % 利用分组, 格式证明只作用于证明环境
+	\theoremstyle{nonumberplain}
+	\theoremheaderfont{\bfseries}
+	\theorembodyfont{\normalfont}
+	%\theoremsymbol{\mbox{$\Box$}} % 放进盒子, 或用 \ensuremath 
+	\theoremsymbol{\ensuremath}
+	\newtheorem{proof}{证明}
+}
+
+\begin{document}
+\begin{proof}
+	证明是显然的.
+\end{proof}
+\end{document}

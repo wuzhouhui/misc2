@@ -1,0 +1,116 @@
+\VimNewChapter
+\VimBookMarkLevelTwo{\VimLaTeX{}难题}{latex}
+
+\begin{center}
+{\CJKfamily{kai}\LARGE{\VimLaTeX{}难题}}
+%{\CJKfamily{kai}\LARGE{LaTeX难题}}
+\end{center}
+{\setlength{\parindent}{0mm}
+
+0. 把问题列在这里是希望\VimLaTeX高手们不吝赐教。群众的眼睛是贼亮贼亮的，
+如果大家有好的建议，可以直接发到\VimMailURL{slimzhao}{hotmail.com}。
+
+\begin{samepage}
+\begin{VimVBDisplay}[label=“求人不如求己”]
+苏东坡问佛印道：“人人皆念观世音菩萨，观世音菩萨念谁？”
+佛印答道：“念观世音菩萨。”
+苏东坡诧异：“为何亦念观世音菩萨？”
+曰：“求人不如求己。”
+\end{VimVBDisplay}
+\end{samepage}
+
+目前为止我所求的\VimLaTeX菩萨一尊也没有出现，只好反求诸己。下面加了*号的
+是已经解决了的。
+
+1*. fancyvrb中的Verbatim环境内部脚注不能正常工作。其它命令可以。定义了脚
+注还是会在相应文字右上角显示一个脚注数字，页面底下却不见了脚注的文字内容
+。点击那个链接也不会有任何动作。
+
+办法：使用页面内部的脚注，为了区分于普通的脚注，脚注标号使用红色字母。
+
+\begin{samepage}
+\VimNewFooterInVerbatim
+\begin{VimVBDisplay}[commandchars=\\\{\},label=点一下我里面的脚注试试看]
+点我肩膀上的小脚标试试看\VimFooterMarkInVerbatim{}
+再点我肩膀上的小脚标试试看\VimFooterMarkInVerbatim{}
+\end{VimVBDisplay}
+\colorbox{VimVisualBkColor}{\parbox{\linewidth}{ %%verbatim footnote backcolor begin
+\VimFooterTextInVerbatim{从手册的7.1版开始，就可以看到这种框框环境内部的
+脚注啦！}
+\VimFooterTextInVerbatim{从手册的7.1版开始，就可以看到这种框框环境内部的
+脚注啦！}
+}} %%verbatim footnote backcolor end
+\end{samepage}
+
+2*. 通过fancyvrb的Verbatim自定义的一个方框里面显示一些文字，在文字过长时
+超出了方框，很难看。没有办法让方框自动根据最大行长加宽，更过分的是，有些
+行远远超出了屏幕之外。
+
+办法：使用Verbatim的 xleftmargin和xrightmargin参数，设为负值可以调整边框
+大小，象下面这样
+
+\begin{VimVBDisplay}[label=没招]
+我就是这么长长长长长长长长长长长长长长长长长长长长长长长长长的一行看你咋排版
+\end{VimVBDisplay}
+
+\begin{VimVBDisplay}[xleftmargin=-2cm, xrightmargin=-2cm, label=再长也能搞定你]
+我就是这么长长长长长长长长长长长长长长长长长长长长长长长长长的一行看你咋排版
+\end{VimVBDisplay}
+
+\begin{samepage}
+3*. 可能是因为CJK包的问题，有些行超出排版边界似乎是无法避免的，因为它不能
+在汉字中间插入空格。比如下面的一行那个略微越出右边界的\VimDQuote{无}字\\
+
+{
+\fussy
+\VimSepartor
+由于变量"s:count"是局部于该脚本的，所以在另一个脚本如"other.vim"无
+论如何也不会触及到该变量的值。
+\VimSepartor
+}
+
+但我却发现一处脚注里的文字在汉字之间插入了空格，排得比较匀称。把它COPY到这里
+\VimMyFootnote{译注：Vim脚本中变量沿用了经典的计算机语言中变量的词法定义，如
+C/\VimCPP{}/Java等。如果读者已熟知正则表达式，这一定义可表示为
+\VimDQuote{[a-zA-Z\VimTT{\_}][a-zA-Z0-9\VimTT{\_}]*}}
+看看能不能同样地复现
+
+办法：使用\VimBS{}sloppy命令可以让\VimLaTeX{}放松对字/字母间距的要求，缺
+点是汉字之间的间距可能会大一些，下面是同样的文字使用该命令后的效果：
+
+{
+\VimSepartor
+由于变量"s:count"是局部于该脚本的，所以在另一个脚本如"other.vim"无
+论如何也不会触及到该变量的值。
+\VimSepartor
+}
+\end{samepage}
+
+4*. 如何在宏里实现替换？问题是这样的:\\
+象这样的内嵌EMAIL地址\VimInlineURL{slimzhao@21cn.com}其中的\VimDQuote{圈
+a}看起来是什么鬼样子？相信没几个人会欣赏，太容易跟CopyRight的标志\copyright{}混淆了。
+
+查了\VimLaTeX{}符号表后找到了marvosym包中一个\VimBS{}MVAt的符号，显示的效果是这样：\MVAt。这是大家喜闻乐见的形式，这就有一个问题，我定义了一个宏来实现统一风格的MAIL超级链接:\\
+\begin{VimVBshcmd}[label=\VimLaTeX{}命令定义]
+\newcommand{\VimMailURL}[1]
+	{\textcolor{VimURLColor}{\href{mailto:#1}{#1}
+}
+\end{VimVBshcmd}
+
+因为email地址是作为一个整体传给命令\verb|\VimMailURL|的，所以需要在宏定
+义中想办法把参数\verb|#1|中出现的\verb|@|字符替换为\verb|\MVAt|.
+
+目前的变通方法比较累：把宏修改成接受两个参数
+\begin{VimVBshcmd}[label=\VimLaTeX{}命令定义]
+\newcommand{\VimMailURL}[2]{
+	\texttt{<}\textcolor{VimURLColor}{\href{mailto:#1@#2}
+	{#1{\footnotesize\MVAt}#2}}\texttt{>}}
+\end{VimVBshcmd}
+当然有了Vim可以很方便地替换所有的~\verb|\VimMailURL{xxx}{yyy.zzz}|~。
+
+5. 完美的中文字体\\
+这在中文\VimLaTeX{}社区是个永恒的话题，似乎永远没有彻底的解决方法，默认的
+宋体字看着太淡。在6.3版的手册中汉字主体用的是文鼎公司的简报宋，好象没人
+对此提出太大意见，我个人觉得比默认的宋体美观。没有找到更好的字体之前，就
+用这个了。
+}

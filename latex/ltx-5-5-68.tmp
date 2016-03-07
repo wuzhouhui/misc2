@@ -1,0 +1,10 @@
+verbatimtex
+%&latex
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{ CJK}
+\AtBeginDocument{\begin{CJK}{UTF8}{gbsn}}\AtEndDocument{\end{CJK}}
+\begin{document}
+etex
+picture latexmp_picture[];
+latexmp_picture[1]:= btex $\Lleftarrow$ 单位圆 etex ;

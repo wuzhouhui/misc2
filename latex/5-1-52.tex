@@ -1,0 +1,17 @@
+\documentclass[nofonts]{ctexart}
+
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+
+\usepackage{blkarray}
+
+\begin{document}
+% 如果不用 &| 说明, 则竖线 | 将会被看成中间一列的内容
+\begin{blockarray}{|l|c&|r|}
+张三	& Zhang	& 80	\\
+% 不用在 r 后面用 |, 也不影响表格线
+李四	& \BAmulticolumn{1}{r}{Li}	& 78	\\
+王五	& Wang	& 100	\\
+\end{blockarray}
+\end{document}

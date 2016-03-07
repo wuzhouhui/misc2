@@ -1,0 +1,15 @@
+\begin{longtable}{|c|X|X|X|X|X|}
+\end{longtable}
+\caption{各种序号}        \\
+\hline
+\endfirsthead
+\hline
+\endhead
+\hline
+\endfoot
+数字        & 1        & 2        & 3        & 4        & 5                \\
+\hline
+字母        & A        & B        & C        & D        & E                \\
+\hline
+天干        & 甲& 乙& 丙& 丁& 戊        \\
+\end{longtable}

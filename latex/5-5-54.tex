@@ -1,0 +1,29 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage{siunitx}
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}
+	% 坐标轴
+	\draw[->] (0, 0) -- ({rad(210)}, 0);
+	\draw[->] (0, -1.2) -- (0, 1.2);
+	% 文字标签与刻度
+	\foreach \t in {0, 90, 180} {
+		\draw ({rad(\t)}, -0.05) -- ({rad(\t)}, 0.05);
+		\node[below, outer sep=2pt, font=\small]
+			at ({rad(\t)}, 0) {\ang{\t}};
+	}
+	\foreach \y in {-1, 1} {\draw (-0.05, \y) -- (0.05, \y);}
+\end{tikzpicture}
+\end{document}

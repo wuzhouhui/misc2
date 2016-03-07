@@ -1,0 +1,36 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{WenQuanYi Micro Hei Mono}
+\setCJKsansfont{WenQuanYi Micro Hei Mono}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{WenQuanYi Micro Hei Mono}
+\setsansfont{WenQuanYi Micro Hei Mono}
+\setmonofont{FreeMono}
+
+\usepackage{graphicx}
+\usepackage{caption}
+
+\begin{document}
+\begin{figure}
+	\begin{minipage}[b]{.5\textwidth}
+		\centering
+		\includegraphics[width=.4\textwidth]{lady.jpg}
+		\caption{\TeX\ Live 吉祥物狮子}
+	\end{minipage}%
+	\begin{minipage}[b]{.5\textwidth}
+		\centering
+		\begin{tabular}{|*{5}{c|}}
+			\hline
+			1996	& 1998	& 1999	& 2000	& 2001	\\ \hline
+			2002	& 2003	& 2004	& 2005	& 2007	\\ \hline
+			2008	& 2009	& 2010	& \dots	&		\\
+			\hline
+		\end{tabular}
+		\captionsetup{type=table}
+		\caption{\TeX\ Live 的版本}
+	\end{minipage}
+\end{figure}
+\end{document}

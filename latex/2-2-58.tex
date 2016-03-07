@@ -1,0 +1,16 @@
+\documentclass[nofonts]{ctexart}
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{AR PL UMing CN}
+\setCJKfamilyfont{ukai}{AR PL UKai CN}
+\usepackage{listings}
+\begin{document}
+\lstset{ % 整体设置
+        language = C,
+        flexiblecolumns,
+        escapechar =`
+}
+\begin{lstlisting}
+double x = 1/sin(x);    // `$\frac1{\sin x}$`
+\end{lstlisting}
+\end{document}

@@ -1,0 +1,22 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{WenQuanYi Zen Hei}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage[all, pdf]{xy}
+\usepackage{amsmath}
+
+\begin{document}
+\[
+	\xymatrix@=2cm{
+		*++=[o][F]\txt{猫猫} \ar@{<->}[r]	& *+[F]\txt{狗 \\ 狗}
+	}
+\]
+\end{document}

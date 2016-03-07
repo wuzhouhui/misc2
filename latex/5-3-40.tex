@@ -1,0 +1,30 @@
+\documentclass[nofonts]{ctexart}
+
+% 设置中文字体
+\setCJKmainfont{AR PL UMing CN}
+\setCJKsansfont{AR PL UMing CN}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+% 设置英文字体
+\setmainfont{Times New Roman}
+\setsansfont{Droid Sans Mono}
+\setmonofont{FreeMono}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{varwidth}
+
+\begin{document}
+\begin{figure}
+	\centering
+	\begin{varwidth}[t]{\textwidth}
+		\vspace{0pt}
+		\includegraphics{lion.eps}
+	\end{varwidth}
+	\qquad
+	\begin{varwidth}[t]{\textwidth}
+		\vspace{0pt}
+		\includegraphics[height=4cm]{textlive-lion.pdf}
+	\end{varwidth}
+\end{figure}
+\end{document}

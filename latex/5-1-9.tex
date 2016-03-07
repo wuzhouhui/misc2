@@ -1,0 +1,23 @@
+\documentclass[nofonts]{ctexart}
+
+\setCJKmainfont{AR PL UKai CN}
+\setCJKsansfont{AR PL UKai CN}
+\setCJKmonofont{AR PL UKai CN}
+
+\usepackage{dcolumn}
+
+\begin{document}
+\newcolumntype{d}{D{.}{.}{2}}
+\begin{tabular}{|c|*{3}{d|}}
+\hline
+姓名	& \multicolumn{1}{c|}{张三}	& \multicolumn{1}{c|}{李四}
+	& \multicolumn{1}{c|}{王五}									\\
+\hline
+收入	& 12345.6	& 5000	& 1020.55	\\
+\hline
+支出	& 765.43	& 5120.5& 98760		\\
+\hline
+节余	& 11580.17	& -120.5& -97739.45	\\
+\hline
+\end{tabular}
+\end{document}
