@@ -1,0 +1,101 @@
+
+
+  # TO tag         FROM line  in file/text
+  1  1 lock_notify       305  kernel/clock.c
+  2  1 mini_notify       410  result = mini_notify(proc_addr(src), dst); 
+> 3  1 set_sys_bit       381  set_sys_bit(priv(dst_ptr)->s_notify_pending, src_
+
+
+  # TO tag         FROM line  in file/text
+  1  1 cause_sig          68  kernel/exception.c
+>
+
+
+  # TO tag         FROM line  in file/text
+> 1  1 _phys_copy         69  phys_copy(BIOS_VECTOR(0) * 4L, VECTOR(0) * 4L, 8 * 4L);
+
+
+  # TO tag         FROM line  in file/text
+  1  5 _PROTOTYPE         37  kernel/main.c
+>
+
+旧风格的 C 函数声明形式
+
+
+  # TO tag         FROM line  in file/text
+  1  1 image             102  kernel/main.c
+>
+
+
+  # TO tag         FROM line  in file/text
+  1  1 alloc_segments    224  kernel/main.c
+> 2  1 TASK_PRIVILEGE    330  privilege = (iskernelp(rp)) ? TASK_PRIVILEGE : USER_PRIVILEGE;
+
+
+  # TO tag         FROM line  in file/text
+  1  1 _restart          241  kernel/main.c
+>
+main.c END
+
+
+  # TO tag         FROM line  in file/text
+> 1  1 priv              150  if (! (priv(caller_ptr)->s_trap_mask & (1 << func
+
+
+  # TO tag         FROM line  in file/text
+  1  1 mini_receive      259  result = mini_receive(caller_ptr, src_dst, m_ptr, flags);
+> 2  1 s_notify_pending   382  map = &priv(caller_ptr)->s_notify_pending;
+proc.c END
+
+
+  # TO tag         FROM line  in file/text
+  1  1 _hwint00          108  kernel/protect.c
+  2  1 hwint_master      230  ! Each of these entry points is an expansion of the hwint_master macro
+>
+protect.c END
+kernel/start.c END
+kernel/system.c 416
+kernel/system.c END
+kernel/table.c END
+kernel/utility.c kputc()
+kernel/utility.c END
+kernel/system/do_copy.c END
+kernel/system/do_devio.c END
+kernel/system/do_exec.c END
+kernel/system/do_exit.c END
+kernel/system/do_fork.c END
+kernel/system/do_getinfo.c END
+kernel/system/do_getksig.c END
+kernel/system/do_int86.c END
+kernel///system/do_irqctl.c END
+kernel/system/do_kill.c END
+kernel/system/do_memset.c END
+kernel/system/do_newmap.c END
+kernel/system/do_nice.c END
+kernel/system/do_privctl.c END
+kernel/system/do_sdevio.c END
+kernel/system/do_segctl.c END
+kernel/system/do_setalarm.c END
+kernel/system/do_sigreturn.c END
+kernel/system/do_sigsend.c END
+kernel/system/do_times.c END
+kernel/system/do_trace.c END
+kernel/system/do_umap.c END
+kernel/system/do_vcopy.c END
+kernel/system/do_vdevio.c END
+servers/pm/alloc.c __FILE__ log
+servers/pm/alloc.c __FILE__ ???
+servers/pm/alloc.c END
+servers/pm/break.c 67
+servers/pm/break.c END
+Thu Apr 16 19:11:54 CST 2015 servers/pm/break.c END
+Thu Apr 16 20:08:38 CST 2015 servers/pm/exec.c 113
+servers/pm/exec.c 125
+Tue Apr 21 13:36:31 CST 2015 servers/pm/exec.c 125
+
+
+  # TO tag         FROM line  in file/text
+  1  1 pm_exit           127  servers/pm/forkexit.c
+  2  1 set_alarm         158  servers/pm/forkexit.c
+  3  1 pm_set_timer      342  servers/pm/signal.c
+>

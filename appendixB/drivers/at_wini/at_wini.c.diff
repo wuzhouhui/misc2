@@ -1,0 +1,61 @@
+Index: at_wini.c
+===================================================================
+RCS file: /cvsup/minix/src/drivers/at_wini/at_wini.c,v
+retrieving revision 1.37
+retrieving revision 1.39
+diff -u -r1.37 -r1.39
+--- at_wini.c	12 Sep 2005 13:25:40 -0000	1.37
++++ at_wini.c	21 Sep 2005 12:27:23 -0000	1.39
+@@ -110,6 +110,8 @@
+ #define REG_CNT_LO          4   /* low byte of cylinder number */
+ #define REG_CNT_HI          5   /* high byte of cylinder number */
+ #define REG_DRIVE           6   /* drive select */
++#endif
++
+ #define REG_STATUS          7   /* status */
+ #define   STATUS_BSY            0x80    /* controller busy */
+ #define   STATUS_DRDY           0x40    /* drive ready */
+@@ -119,6 +121,7 @@
+ #define   STATUS_CORR           0x04    /* correctable error occurred */
+ #define   STATUS_CHECK          0x01    /* check error */
+ 
++#ifdef ENABLE_ATAPI
+ #define   ATAPI_PACKETCMD       0xA0    /* packet command */
+ #define   ATAPI_IDENTIFY        0xA1    /* identify drive */
+ #define   SCSI_READ10           0x28    /* read from disk */
+@@ -538,8 +541,6 @@
+ #endif
+ 
+ 	/* Partition the disk. */
+-	memset(wn->part, sizeof(wn->part), 0);
+-	memset(wn->subpart, sizeof(wn->subpart), 0);
+ 	partition(&w_dtab, w_drive * DEV_PER_DRIVE, P_PRIMARY, wn->state & ATAPI);
+   }
+   wn->open_ct++;
+@@ -1477,6 +1478,9 @@
+   return(OK);
+ }
+ 
++
++#endif /* ENABLE_ATAPI */
++
+ /*===========================================================================*
+  *				w_other					     *
+  *===========================================================================*/
+@@ -1536,7 +1540,6 @@
+ 	return EINVAL;
+ }
+ 
+-
+ /*===========================================================================*
+  *				w_hw_int				     *
+  *===========================================================================*/
+@@ -1602,6 +1605,8 @@
+ 	return str;
+ }
+ 
++#if ENABLE_ATAPI
++
+ /*===========================================================================*
+  *				atapi_intr_wait				     *
+  *===========================================================================*/
