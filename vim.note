@@ -1,0 +1,125 @@
+在X windows中复制的内容, 在插入状态时按组合键Shift+Insert粘贴
+
+使用重排命令gq时, vim会根据textwidth的设置值, 在适当的位置插入一个换行符,
+使得每行的长度差不多, 但是仅对正常的英文有效, 如果英文之间没用空格隔开,
+或者是类似中文那样的长单词, 则不起作用, 但是添加format.vim到plugin目录中则
+可解决此问题
+
+taglist                         以ctags为基础, 可在侧边栏显示变量, 函数, 宏,
+在打开一个文件后, 执行 :Tlist 后, 若出现错误信息
+Taglist: Failed to generate tags for /home/dell/main.c
+ctags: unrecognized option '--format=2'^@^ITry `ctags --help' for a complete
+list of option.^@
+会出现这样的信息是因为taglist会使用exuberant ctags产生tags文件,
+而vim默认会使用GNU ctags, 两种ctags程序的选项并不相同,
+只要在vim的配置文件中指定使用exuberant ctags即可, 在.vimrc中加入
+let Tlist_Ctags_Cmd="/usr/bin/ctags-exuberant"
+即可解决错误(注意, 等号右边的值是 ctags-exuberant 在我的系统上的路径)
+修改源代码文件后, 若想刷新 taglist, 切换窗口即可
+ctags-exuberant -R .            递归生成 tags 文件, 不要用 ctags, 无法递归, 可能 ctags 是
+                                是另一处命令, 与 ctags-exuberant 不同
+
+安装emacs后, 会安装ctags, 但此ctags并不适用于vi, 欲在vi中使用ctags, 需手动重新安装ctags才可.
+g+ctrl+g                        统计文件中的字, 字符, 行
+:g/^$/d                         删除空行
+:sp 档名                        在新窗口(水平分割)中打开文件
+:vs 档名                        在新窗口(垂直分割)中打开文件
+xml.vim                         该缩进文件有问题, 不要使用
+:n                              编辑下一个文件
+zm                              关闭折叠
+zM                              关闭所有
+zr                              打开
+zR                              打开所有
+zc                              折叠当前行
+zo                              打开当前折叠
+zd                              删除折叠
+zD                              删除所有折叠
+:loadview                       载入折叠信息
+:mkview                         保存折叠信息
+zo                              展开折叠
+zc                              折叠
+zd                              删除折叠
+:n,mfo                          对n到m行进行折叠
+{i}gt                           切换到第i个标签页
+tabclose i                      关闭第i个标签页, i从1开始
+ctrl+v ctrl+m                   输入^M
+x                               删除一个字符
+s                               删除一个字符并进入插入模式
+S                               删除一行并进入插入模式
+w                               前进一个单词
+b                               后退一个单词
+gj                              当设置wrap时, 移动到下一个显示行
+gk                              当设置wrap时, 移动到上一个显示行
+:tabm n                         将当前标签页移动到第n个位置, n从0开始, 若不指定n, 则移动到最右边的位置
+/\/                             搜索正斜杆, 需使用反斜杆转码
+:so~/.vimrc	                重新载入配置文件
+d$                              从光标开始的地方一直删除到行的末尾
+:%s/;/&\r/g                     在每个封号后添加换行符
+&                               匹配模式的字符串, 系一变量
+J                               消除光标所在行与下一行之间的换行符, 并插入一个空格符, 适用于英文
+gJ                              消除光标所在行与下一行之间的换行符, 适用于中文
+cw                              删除一个单词并进入插入模式
+dw                              删除一个单词
+vim无需按快捷键自动补全: 下载安装 autocomplpop插件, 具体google
+$                               行末
+^                               行的开头
+:sav                            另存为
+:%s/str1/str2/g                 将全部的str1替换为str2
+:%s/str1/str2/gc                将全部的str1替换为str2，每当替换时便请求确认
+:m,ns/str1/str2/g               将第m行到n行的str1替换为str2
+:m,ns/str1/str2/                将第m行到n行的第一个str1替换为str2
+:e                              打开文件
+:tabe                           在新标签打开文件
+:tabfirst                       切换到第一个标签
+:tablast                        切换到最后一个标签
+:tabnm                          切换到从左至右数第m个标签
+:tabpm                          切换到从右至左数第m个标签
+:cw                             打开 quickfix 窗口
+:ccl                            关闭 quickfix 窗口
+:cn                             显示 quickfix 的下一条消息
+:cp                             显示 quickfix 的上一条消息
+gt                              切换到下一标签
+gT                              切换到上一标签
+tabo                            关闭除当前标签页之外的全部标签页
+v                               开始选择文体，再按一次v结束选择
+ctrl+w s                        水平分割
+ctrl+w v                        垂直分割
+ctrl+w w                        切换窗口
+ctrl+w h j k l                  分别向左, 下, 上, 右切换窗口
+ctrl+w q                        关闭窗口
+gg=G                            对第一行到最后一行进行缩进整理
+nG=mG                           对第n行到第m行的代码进行缩进整理
+%                               跳到与之匹配的各种括号
+``                              (1左边的键)将光标移到之前的位置
+$                               将光标移到行末
+0                               将光标移到行首
+:=                              查看本文件的行数
+ggyG                            复制全文
+ggdG                            删除全文
+yw                              复制一个单词
+.                               重复上个命令, 或前一次命令, 或上一次命令
+:!!                             执行前一次, 上一次外部shell命令
+@:                              执行前一次, 上一次冒号命令
+:m,ns/^/string/                 给第m行至第n行的行首添加字符串string
+:m,ns#^#//#                     给第m行到第n行添加C语言的单行注释标志//
+Ctrl+v                          区块选择
+:sh                             暂时回到shell环境
+:qa                             关闭全部窗口退出vim
+:wa                             保存全部已打开的文件
+:wqa                            保存全部已打开的文件并退出vim
+ctrl+x ctrl+o                   安装javacomplete插件后列出成员快捷键
+ctrl+x ctrl+u                   安装vjde插件后列出成员快捷键
+:%s//bar/g                      用 bar 替换每一个匹配, 被匹配的模式为最后一次搜索的模式,
+                                例如, 你可能输入 * 来搜索 foo, 这条命令将会替换每一个 foo
+:%s/foo/<c-r>a/g                用寄存器 a 的内容替换 foo, <c-r>a 意味着先按 Ctrl-R, 再按 a
+                                以上两条命令可用于替换无法输入的字符
+ctrl+w +/-                      增加或减小窗口的大小
+:set scrollbind                 窗口同步/同时滚动
+:set scb!                       打开/关闭窗口同步滚动
+:windo                          在所有窗口中执行该命令
+:tabdo                          在所有标签页中执行该命
+使用 ctags 阅读代码时, 若同一个单词具有多个定义, 可在按 Ctr-] 之前加上数字, 来决定看哪一个定义
+ctags 应增加这样一个功能, 保存栈信息.
+tags				显示 ctags 栈(tag-stack)信息
+vim 能不能对某几行不编行号?
+vim -x filename                 加密文件, 仅能由vim打开
