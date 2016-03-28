@@ -13,11 +13,19 @@ set fencs=utf-8,gbk,usc-bom,euc-jp,big5,gb18030,gb2312,cp936
 " do not use keyboard pattern of vi
 set nocompatible
 
+" highligh trailing space or tab
+match errorMsg /\t$\| $/
+
 " the length of history
 set history=1000
 
 " auto reload file when file modifyed by others
 set autoread
+
+" using space to perform page down
+nmap <Space> <C-f>
+" using backspace to perform page up
+nmap <BS> <C-b>
 
 " set filetype to markdown for *.md
 autocmd bufNewFile,BufReadPost *.md set filetype=markdown
