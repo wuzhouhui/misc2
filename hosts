@@ -4215,31 +4215,6 @@ ff02::2 ip6-allrouters
 # ¸üÐÂµØÖ·£ºhttp://laod.cn/hosts/2015-google-hosts.html
 # Dropbox_hosts end
 # Github_hosts start
-199.27.74.133    assets-cdn.github.com
-199.27.78.133    avatars1.githubusercontent.com
-199.27.78.133    avatars2.githubusercontent.com
-199.27.78.133    avatars3.githubusercontent.com
-199.27.74.133    avatars4.githubusercontent.com
-199.27.74.133    avatars5.githubusercontent.com
-199.27.75.133    avatars6.githubusercontent.com
-199.27.74.133    avatars7.githubusercontent.com
-199.27.75.133    avatars8.githubusercontent.com
-199.27.74.133    camo.githubusercontent.com
-199.27.74.133    collector-cdn.github.com
-199.27.74.133    documentcloud.github.com
-54.243.192.65    enterprise.github.com
-192.30.252.142    gist.github.com
-199.27.74.133    gist-assets.github.com
-192.30.252.128    github.com
-103.245.222.249    github.global.ssl.fastly.net
-199.27.74.133    goagent.github.io
-199.27.74.133    google.github.io
-199.27.74.133    help.github.com
-192.30.252.147    nodeload.github.com
-199.27.74.133    pages.github.com
-199.27.74.133    raw.github.com
-192.30.252.128    www.github.com
-199.27.79.133    huhamhire.github.com
 10.2.150.109	server-ssg
 10.2.151.237	ams-svn
 # Github_hosts end
