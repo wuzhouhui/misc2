@@ -228,6 +228,7 @@ let Tlist_Ctags_Cmd="/usr/bin/ctags-exuberant"
 let g:no_atp=1
 let g:Tex_SmartKeyQuote=0
 let g:Tex_AutoFolding=0
+let g:Imap_UsePlaceHolders=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 		   Autocommands				"
@@ -627,4 +628,3 @@ augroup autotag
 augroup END
 
 endif " has("python")
-
