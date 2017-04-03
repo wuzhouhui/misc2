@@ -1,0 +1,1 @@
+svn rpm packages can be found at http://opensource.wandisco.com/centos
