@@ -13,8 +13,10 @@ set fencs=utf-8,gbk,usc-bom,euc-jp,big5,gb18030,gb2312,cp936
 " do not use keyboard pattern of vi
 set nocompatible
 
+"colorscheme pablo
+
 " highligh trailing space or tab
-match errorMsg /\t$\| $/
+"match errorMsg /\t$\| $/
 
 " the length of history
 set history=1000
@@ -145,7 +147,7 @@ set scrolloff=3
 set novisualbell
 
 " content of status line
-set statusline=%t%m%r%h%w\ (%{&ff}){%Y}[%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+set statusline=%t%m%r%h%w\ (%{&ff}){%Y}[%l,%v][%p%%]\ %{strftime(\"20%y-%m-%d\ %H:%M\")}
 
 " the location of status line
 set laststatus=2
