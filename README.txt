@@ -319,7 +319,7 @@
  124. practice_of_pgramming.pdf
       The Practice of Programming
 
- 125. pritical_vim.pdf
+ 125. Vim实用技巧.pdf
       Vim 实用技巧
 
  126. quilt.pdf
@@ -400,3 +400,33 @@
  154. 学习敏捷_构建高效团队.pdf
 
  155. 链接器与加载器.pdf
+
+ 156. Autotools.2nd.Edition.2019.11.pdf
+      Autotools, 2nd Edition
+
+ 157. How.Computers.Really.Work.2020.12.pdf
+      How Computers Really Work
+
+ 158. Refactoring.Improving.the.Design.of.Existing.Code.2nd.Edition.2018.11.pdf
+      Refactoring, Improving the Design of Existing Code, 2nd Edition
+
+ 159. TheRustProgrammingLanguage.pdf
+      The Rust Programming Lauguage
+
+ 160. UNIX_A_History_And_A_Memoir.pdf
+      UNIX, A History And A Memoir
+
+ 161. code-complete-2nd-edition-v413hav.pdf
+      Code Complete, 2nd Edition
+
+ 162. docbook5_the_definitive_guide.pdf
+      Docbook5, the definitive guide
+
+ 163. git_for_teams.pdf
+      Git for Teams
+
+ 164. git_for_teams_zh_CN.pdf
+      Git 团队协作
+
+ 165. openSourceReleaseMismanagement.pdf
+      Subversion 1.5: A Case Study in Open Source Release Mismanagement
