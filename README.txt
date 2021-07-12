@@ -431,3 +431,64 @@
 
  165. openSourceReleaseMismanagement.pdf
       Subversion 1.5: A Case Study in Open Source Release Mismanagement
+
+ 166. AWP.Algorithms.Part.I.4th.2014.2.pdf
+      Algorithms, Part I, 4th Edition
+
+ 167. AWP.Algorithms.Part.II.4th.2014.2.pdf
+      Algorithms, Part II, 4th Edition
+
+ 168. Algorithms.in.C.Part.5.3rd.Edition.2001.8.pdf
+      Algorithms in C, Part 5, 3rd Edition
+
+ 169. Algorithms.in.C.Parts.1-4.3rd.Edition.1997.9.pdf
+      Algorithms in C, Part 1-4, 3rd Edition
+
+ 170. BPF.Performance.Tools.2019.12.pdf
+      BPF Performance Tools
+
+ 171. Effective.Debugging.2016.7.pdf
+      Effective Debugging
+
+ 172. Manning.Unit.Testing.Principles.Practices.and.Patterns.2020.1.pdf
+      Unit Testing: Principles, Practices, and Patterns
+
+ 173. OReilly.Debugging.Teams.2015.10.pdf
+      Debugging Teams
+
+ 174. OReilly.Software.Engineering.at.Google.2020.3.pdf
+      Software Engineering at Google
+
+ 175. Practical.Binary.Analysis.2018.12.pdf
+      Practical Binary Analysis
+
+ 176. Systems.Performance.Enterprise.and.the.Cloud.2013.10.pdf
+      Systems Performance: Enterprise and the Cloud
+
+ 177. Systems.Performance.Enterprise.and.the.Cloud.2nd.Edition.2020.12.pdf
+      Systems Performance: Enterprise and the Cloud, 2nd Edition
+
+ 178. TheDevOpsHandbook.pdf
+      The DevOps Handbook, How to Create Work-Class Agility, Reliability,
+      and Security in Technology Organizations
+
+ 179. The.Rust.Programming.Language.(Covers.Rust.2018).2019.8.pdf
+      The Rust Programming Language, Covers Rust 2018
+
+ 180. [Effective.Unit.Testing(2013.2)].Lasse.Koskela.pdf
+      Effective Unit Testing
+
+ 181. [Linux.Device.Drivers(3rd,2005.2)].Jonathan.Corbet.pdf
+      Linux Device Drivers, 3rd Edition
+
+ 182. [Linux.System.Programming(2nd,2013.5)].Robert.Love.pdf
+      Linux System Programming, 2nd Edition
+
+ 183. [Linux.in.a.Nutshell(6th,2009.9)].Ellen.Siever.pdf
+      Linux in a Nutshell
+
+ 184. [The.Art.of.Readable.Code(2011.11)].Dustin.Boswell.pdf
+      The Art of Readable Code
+
+ 185. [The.Art.of.Unit.Testing(2nd,2013.11)].Roy.Osherove.pdf
+      The Art of Unit Testing
