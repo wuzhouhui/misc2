@@ -50,12 +50,6 @@
 
   18. LibreOfficeWriterGuide.pdf
 
-  19. Linux System Programming, 2nd Edition.pdf
-      Linux System Programming, 2nd Edition, Robert Love
-
-  20. Linux.Command.Line.and.Shell.Scripting.Bible.2nd.edition.pdf
-      Linux Command Line and Shell Scripting Bible, 2nd Edition
-
   21. Linux.Command.Line.and.Shell.Scripting.Bible.May.2008.pdf
       Linux Command Line and Shell Scripting Bible, Richard Blum
 
@@ -201,9 +195,6 @@
   79. apue-src.3e.tar.gz
       The source code appeared in Advanced Programming in the UNIX Environment, 3rd Edition
 
-  80. apue2nd.pdf
-      Advanced Programming in the UNIX Environment, 2nd Edition
-
   81. apue3rd.pdf
       Advanced Programming in the UNIX Environment, 3rd Edition
 
@@ -254,12 +245,6 @@
 
   97. latex-symbols-letter.pdf
       The Comprehensive LATEX Symbol List
-
-  98. ldd3.pdf
-      Linux Device Drivers, 3rd Edition
-
-  99. ldd3_pdf
-      indivisual PDF of Linux Device Drivers, 3rd Edition
 
  100. leetcode-cpp.pdf
       Some C++ solution of Leetcode problem
@@ -364,9 +349,6 @@
 
  141. unp
       The Exercise of Unix Network Programming
-
- 142. unp_v1_3ed_web.chm
-      Unix Network Programming, Volumes 1, 3rd Edition
 
  143. unpv13e.tar.gz
       The source code appeared in Unix Network Programming, Volumes 1, 3rd Edition
