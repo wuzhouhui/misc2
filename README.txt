@@ -492,3 +492,5 @@
 
  185. [The.Art.of.Unit.Testing(2nd,2013.11)].Roy.Osherove.pdf
       The Art of Unit Testing
+
+ 186. A Bug Hunter 039 s Diary A Guided Tour Through the Wilds of Software Security.pdf
