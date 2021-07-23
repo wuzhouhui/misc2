@@ -476,3 +476,5 @@
       The Art of Unit Testing
 
  186. A Bug Hunter 039 s Diary A Guided Tour Through the Wilds of Software Security.pdf
+
+ 187. Continuous Delivery Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble, David Farley (z-lib.org).pdf
