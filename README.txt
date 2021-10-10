@@ -482,69 +482,134 @@
  188. OReilly.Learning.Perl.8th.Edition.2021.8.pdf
       Learning Perl, 8th Edition
 
- Apress-Beginning Ruby - From Novice to Professional.pdf
- Apress-Practical Ruby Gems.pdf
- Beginning Ruby - From Novice to Professional.pdf
- Beginning Ubuntu Linux - From Novice To Professional (2006).pdf
- Best of Ruby Quiz.pdf
- Code Complete 2nd edition 2004.pdf
- Create Your Own Programming Languages.pdf
- Effective.AWK.programming.3rd.edition.2001.Arnold.Robbins.pdf
- From Bash to Z Shell.pdf
- Hacking Ubuntu Serious Hacks Mods and Customizations.chm
- JRuby Cookbook~tqw~_darksiderg.chm
- Jump Start Sinatra V413HAV.pdf
- Linux Shell Scripting with Bash.pdf
- Linux Smart Homes For Dummies.pdf
- Maintainable JavaScript.epub
- Maintainable JavaScript.pdf
- Making Use of Ruby.pdf
- Manning Node.js in Practice (2015).pdf
- Metaprogramming Ruby Program Like the Ruby Pros (2010) (Elements).pdf
- Migrating-to-CouchDB.pdf
- MongoDB.The.Definitive.Guide.pdf
- OReilly - SSH,,The Secure Shell - The Definitive Guide.pdf
- OReilly.Classic.Shell.Scripting.Feb.2005.chm
- OReilly.JavaScript.The.Definitive.Guide.5th.Edition.Aug.2006.chm
- OReilly.JavaScript.The.Good.Parts.May.2008.chm
- OReilly.Learning.the.vi.and.Vim.Editors.7th.Edition.Jul.2008.pdf
- OReilly.PostgreSQL.Up.and.Running.Jul.2012.RETAIL.eBook-ELOHiM.pdf
- OReilly.The.Ruby.Programming.Language.Jan.2008.chm
- Oreilly - Grep Pocket Reference.pdf
- Packtpub.Puppet.2.7.Cookbook.Oct.2011.pdf
- Practical Ruby Projects, Apress (2008).pdf
- Pragmatic.CoffeeScript.Jul.2011.pdf
- Pragmatic_Programmers-Everyday_Scripting_with_Ruby_Jan.2007.pdf
- Pragmatic_Programmers-Programming_Ruby.pdf
- Prentice Hall The Official Ubuntu Server Book 2nd Edition Jul 2010.pdf
- Pro Linux System Administration.pdf
- Professional XMPP Programming.pdf
- Programming Interactivity.pdf
- Programming Ruby - The Pragmatic Programmer's Guide, 2Ed.pdf
- Programming in Lua, Second Edition-2010kaiser.pdf
- Pulling Strings with Puppet.pdf
- Pulling_Strings_With_Puppet__Configuration_Management_Made_Easy_-_James_Turnbull.mobi
- Ruby Developer's Guide.pdf
- Ruby Pocket Reference, 2007.pdf
- Ruby Under a Microscope- Learning Ruby Internals Through Experiment - Pat Shaughnessy-signed.pdf
- Ruby by Example - Concepts and Code, No Starch Press (2007).pdf
- Ruby for System Administration, 2007.pdf
- Scaling CouchDB.pdf
- Sed & awk, 2nd Edition - Dale Dougherty & Arnold Robbins.epub
- Seven Languages in Seven Weeks A Pragmatic Guide to Learning Programming Languages.pdf
- Sinatra Up and Running.pdf
- The Definitive Guide to CentOS.pdf
- The Manga Guide to Databases.pdf
- The Official Ubuntu Book.chm
- The Pragmatic Programmer, From Journeyman To Master - Andrew Hunt, David Thomas - Addison Wesley - 1999.pdf
- The Ruby Way, Addison-Wesley (2006).chm
- The_Joy_of_Clojure.pdf
- Ubuntu Linux - Bible [2007].pdf
- Ubuntu Unleashed.chm
- Ubuntu for Non-Geeks (2nd Ed).pdf
- Vi_IMproved_Book.pdf
- Why's (Poignant) Guide to Ruby.pdf
- Working  with  TCP  Sockets.pdf
- linux - Advanced Bash Shell Scripting Guide.pdf
- mongodb_qrc_queries.pdf
- professional_javascript_for_web_developers_3rd_edition.pdf
+ 189. Apress-Beginning Ruby - From Novice to Professional.pdf
+      Beginning Ruby, From Novice to Professional
+
+ 190. Apress-Practical Ruby Gems.pdf
+      Practical Ruby Gems
+
+ 191. Beginning Ubuntu Linux - From Novice To Professional (2006).pdf
+
+ 192. Best of Ruby Quiz.pdf
+
+ 193. Code Complete 2nd edition 2004.pdf
+
+ 194. Create Your Own Programming Languages.pdf
+
+ 195. Effective.AWK.programming.3rd.edition.2001.Arnold.Robbins.pdf
+
+ 196. From Bash to Z Shell.pdf
+
+ 197. Hacking Ubuntu Serious Hacks Mods and Customizations.chm
+
+ 198. JRuby Cookbook.chm
+
+ 199. Jump Start Sinatra V413HAV.pdf
+
+ 200. Linux Shell Scripting with Bash.pdf
+
+ 201. Linux Smart Homes For Dummies.pdf
+
+ 202. Maintainable JavaScript.epub
+
+ 203. Maintainable JavaScript.pdf
+
+ 204. Making Use of Ruby.pdf
+
+ 205. Manning Node.js in Practice (2015).pdf
+
+ 206. Metaprogramming Ruby Program Like the Ruby Pros (2010) (Elements).pdf
+
+ 207. Migrating-to-CouchDB.pdf
+
+ 208. MongoDB.The.Definitive.Guide.pdf
+
+ 209. OReilly - SSH,,The Secure Shell - The Definitive Guide.pdf
+
+ 210. OReilly.Classic.Shell.Scripting.Feb.2005.chm
+
+ 211. OReilly.JavaScript.The.Definitive.Guide.5th.Edition.Aug.2006.chm
+
+ 212. OReilly.JavaScript.The.Good.Parts.May.2008.chm
+
+ 213. OReilly.Learning.the.vi.and.Vim.Editors.7th.Edition.Jul.2008.pdf
+
+ 214. OReilly.PostgreSQL.Up.and.Running.Jul.2012.RETAIL.eBook-ELOHiM.pdf
+
+ 215. OReilly.The.Ruby.Programming.Language.Jan.2008.chm
+
+ 216. Oreilly - Grep Pocket Reference.pdf
+
+ 217. Packtpub.Puppet.2.7.Cookbook.Oct.2011.pdf
+
+ 218. Practical Ruby Projects, Apress (2008).pdf
+
+ 219. Pragmatic.CoffeeScript.Jul.2011.pdf
+
+ 220. Pragmatic_Programmers-Everyday_Scripting_with_Ruby_Jan.2007.pdf
+
+ 221. Pragmatic_Programmers-Programming_Ruby.pdf
+
+ 222. Prentice Hall The Official Ubuntu Server Book 2nd Edition Jul 2010.pdf
+
+ 223. Pro Linux System Administration.pdf
+
+ 224. Professional XMPP Programming.pdf
+
+ 225. Programming Interactivity.pdf
+
+ 226. Programming Ruby - The Pragmatic Programmer's Guide, 2Ed.pdf
+
+ 227. Programming in Lua, Second Edition-2010kaiser.pdf
+
+ 228. Pulling Strings with Puppet.pdf
+
+ 229. Pulling_Strings_With_Puppet__Configuration_Management_Made_Easy_-_James_Turnbull.mobi
+
+ 230. Ruby Developer's Guide.pdf
+
+ 231. Ruby Pocket Reference, 2007.pdf
+
+ 232. Ruby Under a Microscope- Learning Ruby Internals Through Experiment - Pat Shaughnessy-signed.pdf
+
+ 233. Ruby by Example - Concepts and Code, No Starch Press (2007).pdf
+
+ 234. Ruby for System Administration, 2007.pdf
+
+ 235. Scaling CouchDB.pdf
+
+ 236. Sed & awk, 2nd Edition - Dale Dougherty & Arnold Robbins.epub
+
+ 237. Seven Languages in Seven Weeks A Pragmatic Guide to Learning Programming Languages.pdf
+
+ 238. Sinatra Up and Running.pdf
+
+ 239. The Definitive Guide to CentOS.pdf
+
+ 240. The Manga Guide to Databases.pdf
+
+ 241. The Official Ubuntu Book.chm
+
+ 242. The Pragmatic Programmer, From Journeyman To Master - Andrew Hunt, David Thomas - Addison Wesley - 1999.pdf
+
+ 243. The Ruby Way, Addison-Wesley (2006).chm
+
+ 244. The_Joy_of_Clojure.pdf
+
+ 245. Ubuntu Linux - Bible [2007].pdf
+
+ 246. Ubuntu Unleashed.chm
+
+ 247. Ubuntu for Non-Geeks (2nd Ed).pdf
+
+ 248. Vi_IMproved_Book.pdf
+
+ 249. Why's (Poignant) Guide to Ruby.pdf
+
+ 250. Working  with  TCP  Sockets.pdf
+
+ 251. linux - Advanced Bash Shell Scripting Guide.pdf
+
+ 252. mongodb_qrc_queries.pdf
+
+ 253. professional_javascript_for_web_developers_3rd_edition.pdf
