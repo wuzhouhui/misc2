@@ -347,9 +347,6 @@
  140. understandingKernel1ed.pdf
       Understanding the Linux Kernel
 
- 141. unp
-      The Exercise of Unix Network Programming
-
  143. unpv13e.tar.gz
       The source code appeared in Unix Network Programming, Volumes 1, 3rd Edition
 
@@ -500,10 +497,6 @@
 
  196. From Bash to Z Shell.pdf
 
- 197. Hacking Ubuntu Serious Hacks Mods and Customizations.chm
-
- 198. JRuby Cookbook.chm
-
  199. Jump Start Sinatra V413HAV.pdf
 
  200. Linux Shell Scripting with Bash.pdf
@@ -526,17 +519,9 @@
 
  209. OReilly - SSH,,The Secure Shell - The Definitive Guide.pdf
 
- 210. OReilly.Classic.Shell.Scripting.Feb.2005.chm
-
- 211. OReilly.JavaScript.The.Definitive.Guide.5th.Edition.Aug.2006.chm
-
- 212. OReilly.JavaScript.The.Good.Parts.May.2008.chm
-
  213. OReilly.Learning.the.vi.and.Vim.Editors.7th.Edition.Jul.2008.pdf
 
  214. OReilly.PostgreSQL.Up.and.Running.Jul.2012.RETAIL.eBook-ELOHiM.pdf
-
- 215. OReilly.The.Ruby.Programming.Language.Jan.2008.chm
 
  216. Oreilly - Grep Pocket Reference.pdf
 
@@ -588,17 +573,11 @@
 
  240. The Manga Guide to Databases.pdf
 
- 241. The Official Ubuntu Book.chm
-
  242. The Pragmatic Programmer, From Journeyman To Master - Andrew Hunt, David Thomas - Addison Wesley - 1999.pdf
-
- 243. The Ruby Way, Addison-Wesley (2006).chm
 
  244. The_Joy_of_Clojure.pdf
 
  245. Ubuntu Linux - Bible [2007].pdf
-
- 246. Ubuntu Unleashed.chm
 
  247. Ubuntu for Non-Geeks (2nd Ed).pdf
 
