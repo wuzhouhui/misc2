@@ -592,3 +592,7 @@
  252. mongodb_qrc_queries.pdf
 
  253. professional_javascript_for_web_developers_3rd_edition.pdf
+
+ 254. Advanced.Git.pdf
+
+ 255. BinaryHacks.jp.pdf
