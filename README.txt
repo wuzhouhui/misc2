@@ -596,3 +596,12 @@
  254. Advanced.Git.pdf
 
  255. BinaryHacks.jp.pdf
+
+ 256. Hacking The Art of Exploitation by Jon Erickson.pdf
+      Hacking, The Art of Exploitation
+
+ 257. WorkingEffectivelyWithLegacyCode
+      Working Effectively With Legacy Code
+
+ 258. WritingSolidCode.djvu
+      Writing Solid Code
