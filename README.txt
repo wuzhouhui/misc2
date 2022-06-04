@@ -503,8 +503,6 @@
 
  201. Linux Smart Homes For Dummies.pdf
 
- 202. Maintainable JavaScript.epub
-
  203. Maintainable JavaScript.pdf
 
  204. Making Use of Ruby.pdf
@@ -549,8 +547,6 @@
 
  228. Pulling Strings with Puppet.pdf
 
- 229. Pulling_Strings_With_Puppet__Configuration_Management_Made_Easy_-_James_Turnbull.mobi
-
  230. Ruby Developer's Guide.pdf
 
  231. Ruby Pocket Reference, 2007.pdf
@@ -562,8 +558,6 @@
  234. Ruby for System Administration, 2007.pdf
 
  235. Scaling CouchDB.pdf
-
- 236. Sed & awk, 2nd Edition - Dale Dougherty & Arnold Robbins.epub
 
  237. Seven Languages in Seven Weeks A Pragmatic Guide to Learning Programming Languages.pdf
 
