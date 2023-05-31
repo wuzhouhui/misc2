@@ -599,3 +599,12 @@
 
  258. WritingSolidCode.djvu
       Writing Solid Code
+
+ 259. Introduction.to.Algorithms.4th.Edition.2022.4.pdf
+      Introduction to Algorithms, 4th Edition
+
+ 260. John Graham-Cumming - The GNU Make Book-No Starch Press (2015).pdf
+      The GNU Make Book
+
+ 261. Python.Crash.Course.2nd.Edition.2019.5.pdf
+      Python Crash Course, 2nd Edition
