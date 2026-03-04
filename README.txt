@@ -608,3 +608,6 @@
 
  261. Python.Crash.Course.2nd.Edition.2019.5.pdf
       Python Crash Course, 2nd Edition
+ 
+ 262. Numerical Analysis - Third Edition - Timothy Sauer.pdf
+      Numerical Analysis, 3rd Edition is written for students of engineering, science, mathematics, and computer science who have completed elementary calculus and matrix algebra.
